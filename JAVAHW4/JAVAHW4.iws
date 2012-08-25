@@ -81,9 +81,9 @@
       <file leaf-file-name="ComparableInteger.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/comparators/ComparableInteger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="0" selection-start="0" selection-end="1697" vertical-scroll-proportion="0.0">
+            <state line="21" column="3" selection-start="896" selection-end="982" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#0#1697#0" expanded="true" />
+                <element signature="e#0#1767#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,9 +92,9 @@
       <file leaf-file-name="ComparableString.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/comparators/ComparableString.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="46" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.93264246">
+            <state line="28" column="25" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.8704663">
               <folding>
-                <element signature="e#0#1685#0" expanded="true" />
+                <element signature="e#0#1753#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -473,18 +473,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/comparators/ComparableInteger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="0" selection-start="0" selection-end="1697" vertical-scroll-proportion="0.0">
+        <state line="21" column="3" selection-start="896" selection-end="982" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#1697#0" expanded="true" />
+            <element signature="e#0#1767#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/comparators/ComparableString.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="46" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.93264246">
+        <state line="28" column="25" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.8704663">
           <folding>
-            <element signature="e#0#1685#0" expanded="true" />
+            <element signature="e#0#1753#0" expanded="true" />
           </folding>
         </state>
       </provider>

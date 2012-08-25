@@ -19,7 +19,7 @@
 package ru.spbau.shestavin.task4.comparators;
 
 /**
- * TODO write docs.
+ * Just dummy wrapper around Integer with implementation of Comparable<ComparableInteger>
  *
  * @author Dmitriy shestavin
  * @version 1.0 25 Aug 2012
