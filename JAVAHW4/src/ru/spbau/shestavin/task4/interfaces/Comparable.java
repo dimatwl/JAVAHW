@@ -1,4 +1,4 @@
-package ru.spbau.shestavin.task4;
+package ru.spbau.shestavin.task4.interfaces;
 /*
 * Dmitriy Shestavin
 *
