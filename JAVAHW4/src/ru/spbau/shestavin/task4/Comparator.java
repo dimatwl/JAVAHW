@@ -1,3 +1,4 @@
+package ru.spbau.shestavin.task4;
 /*
 * Dmitriy Shestavin
 *
