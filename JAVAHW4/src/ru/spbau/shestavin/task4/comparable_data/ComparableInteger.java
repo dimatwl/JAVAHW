@@ -28,12 +28,14 @@ public class ComparableInteger implements Comparable<ComparableInteger> {
 
     private Integer value;
 
+    @Override
     public int compareTo(ComparableInteger x) {
         return value.compareTo(x.value);
     }
 
     /**
      * Creates a new ComparableInteger, with value of input parameter.
+     *
      * @param value - value witch will be assigned to new ComparableInteger object.
      */
     public ComparableInteger(Integer value) {
@@ -42,9 +44,20 @@ public class ComparableInteger implements Comparable<ComparableInteger> {
 
     /**
      * Creates a new ComparableInteger, with value of input parameter.
+     *
      * @param value - value witch will be assigned to new ComparableInteger object.
      */
     public ComparableInteger(ComparableInteger value) {
         this.value = value.value;
+    }
+
+    /**
+     * Getter for the value of ComparableInteger.
+     *
+     * @return the value of ComparableInteger.
+     */
+
+    public Integer getValue() {
+        return value;
     }
 }

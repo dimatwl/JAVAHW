@@ -28,12 +28,14 @@ public class ComparableString implements Comparable<ComparableString> {
 
     private String value;
 
+    @Override
     public int compareTo(ComparableString x) {
         return value.compareTo(x.value);
     }
 
     /**
      * Creates a new ComparableString, with value of input parameter.
+     *
      * @param value - value witch will be assigned to new ComparableString object.
      */
     public ComparableString(String value) {
@@ -42,9 +44,19 @@ public class ComparableString implements Comparable<ComparableString> {
 
     /**
      * Creates a new ComparableString, with value of input parameter.
+     *
      * @param value - value witch will be assigned to new ComparableString object.
      */
     public ComparableString(ComparableString value) {
         this.value = value.value;
+    }
+
+    /**
+     * Getter for the value of ComparableString.
+     *
+     * @return the value of ComparableString.
+     */
+    public String getValue() {
+        return value;
     }
 }
