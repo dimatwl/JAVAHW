@@ -16,27 +16,35 @@
 * ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
 * DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
 */
-
-package ru.spbau.shestavin.task4.interfaces;
+package ru.spbau.shestavin.task4.comparators;
 
 /**
- * This interface imposes a total ordering on the objects of each class that implements it.
- * This ordering is referred to as the class's natural ordering, and the class's compareTo method is referred
- * to as its natural comparison method.
+ * TODO write docs.
  *
  * @author Dmitriy shestavin
- * @version 1.0 24 Aug 2012
+ * @version 1.0 25 Aug 2012
  */
-public interface Comparable<T> {
+public class ComparableInteger implements Comparable<ComparableInteger> {
+
+    private Integer value;
+
+    public int compareTo(ComparableInteger x) {
+        return value.compareTo(x.value);
+    }
 
     /**
-     * Compares this object with the specified object for order.
-     * Returns a negative integer, zero, or a positive integer as this object is less than, equal to,
-     * or greater than the specified object.
-     *
-     * @param x - the object of type T to be compared.
-     * @return a negative integer, zero, or a positive integer as this object is less than,
-     *         equal to, or greater than the specified object.
+     * Creates a new ComparableInteger, with value of input parameter.
+     * @param value - value witch will be assigned to new ComparableInteger object.
      */
-    int compareTo(T x);
+    public ComparableInteger(Integer value) {
+        this.value = value;
+    }
+
+    /**
+     * Creates a new ComparableInteger, with value of input parameter.
+     * @param value - value witch will be assigned to new ComparableInteger object.
+     */
+    public ComparableInteger(ComparableInteger value) {
+        this.value = value.value;
+    }
 }

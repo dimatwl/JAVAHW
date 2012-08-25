@@ -1,4 +1,3 @@
-package ru.spbau.shestavin.task4.interfaces;
 /*
 * Dmitriy Shestavin
 *
@@ -17,6 +16,8 @@ package ru.spbau.shestavin.task4.interfaces;
 * ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
 * DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
 */
+
+package ru.spbau.shestavin.task4.interfaces;
 
 /**
  * A comparison function, which imposes a total ordering on some collection of objects.
