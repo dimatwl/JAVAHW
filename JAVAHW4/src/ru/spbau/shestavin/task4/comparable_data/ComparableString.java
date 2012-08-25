@@ -16,35 +16,35 @@
 * ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
 * DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
 */
-package ru.spbau.shestavin.task4.comparators;
+package ru.spbau.shestavin.task4.comparable_data;
 
 /**
- * Just dummy wrapper around Integer with implementation of Comparable<ComparableInteger>
+ * Just dummy wrapper around String with implementation of Comparable<ComparableString>
  *
  * @author Dmitriy shestavin
  * @version 1.0 25 Aug 2012
  */
-public class ComparableInteger implements Comparable<ComparableInteger> {
+public class ComparableString implements Comparable<ComparableString> {
 
-    private Integer value;
+    private String value;
 
-    public int compareTo(ComparableInteger x) {
+    public int compareTo(ComparableString x) {
         return value.compareTo(x.value);
     }
 
     /**
-     * Creates a new ComparableInteger, with value of input parameter.
-     * @param value - value witch will be assigned to new ComparableInteger object.
+     * Creates a new ComparableString, with value of input parameter.
+     * @param value - value witch will be assigned to new ComparableString object.
      */
-    public ComparableInteger(Integer value) {
+    public ComparableString(String value) {
         this.value = value;
     }
 
     /**
-     * Creates a new ComparableInteger, with value of input parameter.
-     * @param value - value witch will be assigned to new ComparableInteger object.
+     * Creates a new ComparableString, with value of input parameter.
+     * @param value - value witch will be assigned to new ComparableString object.
      */
-    public ComparableInteger(ComparableInteger value) {
+    public ComparableString(ComparableString value) {
         this.value = value.value;
     }
 }
