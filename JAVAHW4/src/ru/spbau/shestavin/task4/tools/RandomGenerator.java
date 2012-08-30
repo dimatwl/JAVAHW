@@ -16,22 +16,14 @@
 * ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
 * DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
 */
-package ru.spbau.shestavin.task4.comparators;
-
-import ru.spbau.shestavin.task4.comparable_data.ComparableString;
+package ru.spbau.shestavin.task4.tools;
 
 /**
- * Comparator that allow to compare two ComparableInteger by the remainder of the division.
- *
- * @author Dmitriy shestavin
- * @version 1.0 25 Aug 2012
+ * Created with IntelliJ IDEA.
+ * User: DimaTWL
+ * Date: 8/30/12
+ * Time: 8:20 PM
+ * To change this template use File | Settings | File Templates.
  */
-public class StringLengthComparator implements Comparator<ComparableString>{
-
-    @Override
-    public int compare(ComparableString x, ComparableString y) {
-        Integer xLength = x.getValue().length();
-        Integer yLength = y.getValue().length();
-        return xLength.compareTo(yLength);
-    }
+public interface RandomGenerator {
 }

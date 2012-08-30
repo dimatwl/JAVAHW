@@ -16,22 +16,27 @@
 * ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
 * DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
 */
-package ru.spbau.shestavin.task4.comparators;
 
-import ru.spbau.shestavin.task4.comparable_data.ComparableString;
+package ru.spbau.shestavin.task4.comparable_data;
 
 /**
- * Comparator that allow to compare two ComparableInteger by the remainder of the division.
+ * This interface imposes a total ordering on the objects of each class that implements it.
+ * This ordering is referred to as the class's natural ordering, and the class's compareTo method is referred
+ * to as its natural comparison method.
  *
  * @author Dmitriy shestavin
- * @version 1.0 25 Aug 2012
+ * @version 1.0 24 Aug 2012
  */
-public class StringLengthComparator implements Comparator<ComparableString>{
+public interface Comparable<T> {
 
-    @Override
-    public int compare(ComparableString x, ComparableString y) {
-        Integer xLength = x.getValue().length();
-        Integer yLength = y.getValue().length();
-        return xLength.compareTo(yLength);
-    }
+    /**
+     * Compares this object with the specified object for order.
+     * Returns a negative integer, zero, or a positive integer as this object is less than, equal to,
+     * or greater than the specified object.
+     *
+     * @param x - the object of type T to be compared.
+     * @return a negative integer, zero, or a positive integer as this object is less than,
+     *         equal to, or greater than the specified object.
+     */
+    public int compareTo(T x);
 }

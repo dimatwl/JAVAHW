@@ -17,7 +17,7 @@
 * DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
 */
 
-package ru.spbau.shestavin.task4.interfaces;
+package ru.spbau.shestavin.task4.comparators;
 
 /**
  * A comparison function, which imposes a total ordering on some collection of objects.
@@ -39,5 +39,5 @@ public interface Comparator<T> {
      * @return a negative integer, zero, or a positive integer as the first argument is less than,
      *         equal to, or greater than the second.
      */
-    int compare(T x, T y);
+    public int compare(T x, T y);
 }

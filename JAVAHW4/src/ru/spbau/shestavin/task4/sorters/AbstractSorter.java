@@ -16,27 +16,28 @@
 * ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
 * DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
 */
+package ru.spbau.shestavin.task4.sorters;
 
-package ru.spbau.shestavin.task4.interfaces;
+import ru.spbau.shestavin.task4.comparators.Comparator;
+import ru.spbau.shestavin.task4.comparable_data.Comparable;
+
+import java.util.List;
 
 /**
- * This interface imposes a total ordering on the objects of each class that implements it.
- * This ordering is referred to as the class's natural ordering, and the class's compareTo method is referred
- * to as its natural comparison method.
+ * Abstract class for sorting. Defines some general behaviour.
  *
  * @author Dmitriy shestavin
- * @version 1.0 24 Aug 2012
+ * @version 1.0 30 Aug 2012
  */
-public interface Comparable<T> {
+public abstract class AbstractSorter implements Sorter {
 
-    /**
-     * Compares this object with the specified object for order.
-     * Returns a negative integer, zero, or a positive integer as this object is less than, equal to,
-     * or greater than the specified object.
-     *
-     * @param x - the object of type T to be compared.
-     * @return a negative integer, zero, or a positive integer as this object is less than,
-     *         equal to, or greater than the specified object.
-     */
-    int compareTo(T x);
+    @Override
+    public <T extends Comparable<? super T>> void sort(List<T> list) {
+        sort(list, new Comparator<T>() {
+            @Override
+            public int compare(T x, T y) {
+                return x.compareTo(y);
+            }
+        });
+    }
 }

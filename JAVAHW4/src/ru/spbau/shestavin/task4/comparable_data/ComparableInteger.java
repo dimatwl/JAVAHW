@@ -60,4 +60,9 @@ public class ComparableInteger implements Comparable<ComparableInteger> {
     public Integer getValue() {
         return value;
     }
+
+    @Override
+    public String toString(){
+        return value.toString();
+    }
 }

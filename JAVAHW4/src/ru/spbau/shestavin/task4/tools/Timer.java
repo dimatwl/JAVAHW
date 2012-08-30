@@ -16,22 +16,34 @@
 * ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
 * DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
 */
-package ru.spbau.shestavin.task4.comparators;
+package ru.spbau.shestavin.task4.tools;
 
-import ru.spbau.shestavin.task4.comparable_data.ComparableString;
+import ru.spbau.shestavin.task4.comparators.Comparator;
+import ru.spbau.shestavin.task4.sorters.Sorter;
+import ru.spbau.shestavin.task4.comparable_data.Comparable;
+
+
+import java.util.List;
 
 /**
- * Comparator that allow to compare two ComparableInteger by the remainder of the division.
+ * Class for measuring time of sorting.
  *
  * @author Dmitriy shestavin
- * @version 1.0 25 Aug 2012
+ * @version 1.0 29 Aug 2012
  */
-public class StringLengthComparator implements Comparator<ComparableString>{
+public class Timer {
 
-    @Override
-    public int compare(ComparableString x, ComparableString y) {
-        Integer xLength = x.getValue().length();
-        Integer yLength = y.getValue().length();
-        return xLength.compareTo(yLength);
+    public <T extends Comparable<T>> long getTime(List<T> list, Sorter sorter){
+        long startTime = System.currentTimeMillis();
+        sorter.sort(list);
+        long endTime = System.currentTimeMillis();
+        return endTime - startTime;
+    }
+
+    public <T> long getTime(List<T> list, Sorter sorter, Comparator<? super T> comparator){
+        long startTime = System.currentTimeMillis();
+        sorter.sort(list, comparator);
+        long endTime = System.currentTimeMillis();
+        return endTime - startTime;
     }
 }

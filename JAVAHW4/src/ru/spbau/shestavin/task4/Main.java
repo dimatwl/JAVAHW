@@ -16,34 +16,38 @@
 * ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
 * DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
 */
-package ru.spbau.shestavin.task4.comparators;
+package ru.spbau.shestavin.task4;
 
 import ru.spbau.shestavin.task4.comparable_data.ComparableInteger;
+import ru.spbau.shestavin.task4.sorters.Sorter;
+import ru.spbau.shestavin.task4.sorters.ShakerSorter;
+
+import java.util.ArrayList;
+import java.util.List;
+
 
 /**
- * Comparator that allow to compare two ComparableInteger by the remainder of the division.
+ * Main class. Contains only one method witch is entry point.
  *
  * @author Dmitriy shestavin
- * @version 1.0 25 Aug 2012
+ * @version 1.0 30 Aug 2012
  */
-public class IntegerModComparator implements Comparator<ComparableInteger>{
-
-    Integer divisorValue;
+public class Main {
 
     /**
-     * Creates a new IntegerModComparatorthat that allow to compare
-     * two ComparableInteger by the remainder of the division by divisorValue.
+     * Entry point of the program.
      *
-     * @param divisorValue - value of the divisor.
+     * @param args contains arguments from command line.
      */
-    public IntegerModComparator(Integer divisorValue) {
-        this.divisorValue = divisorValue;
-    }
-
-    @Override
-    public int compare(ComparableInteger x, ComparableInteger y) {
-        Integer xRemainder = x.getValue() % divisorValue;
-        Integer yRemainder = y.getValue() % divisorValue;
-        return xRemainder.compareTo(yRemainder);
+    public static void main(String[] args) {
+        List<ComparableInteger> list = new ArrayList<ComparableInteger>();
+        list.add(new ComparableInteger(5));
+        list.add(new ComparableInteger(7));
+        list.add(new ComparableInteger(1));
+        list.add(new ComparableInteger(3));
+        list.add(new ComparableInteger(4));
+        Sorter sorter = new ShakerSorter();
+        sorter.sort(list);
+        System.out.println(list.toString());
     }
 }
