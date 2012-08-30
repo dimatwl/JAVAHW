@@ -19,8 +19,11 @@
 package ru.spbau.shestavin.task4;
 
 import ru.spbau.shestavin.task4.comparable_data.ComparableInteger;
+import ru.spbau.shestavin.task4.sorters.HeapSorter;
 import ru.spbau.shestavin.task4.sorters.ShakerSorter;
 import ru.spbau.shestavin.task4.sorters.Sorter;
+import ru.spbau.shestavin.task4.tools.ComparableIntegerRandomGenerator;
+import ru.spbau.shestavin.task4.tools.Timer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,14 +43,25 @@ public class Main {
      * @param args contains arguments from command line.
      */
     public static void main(String[] args) {
-        List<ComparableInteger> list = new ArrayList<ComparableInteger>();
-        list.add(new ComparableInteger(5));
-        list.add(new ComparableInteger(7));
-        list.add(new ComparableInteger(1));
-        list.add(new ComparableInteger(3));
-        list.add(new ComparableInteger(4));
-        Sorter sorter = new ShakerSorter();
-        sorter.sort(list);
-        System.out.println(list.toString());
+        Timer timer = new Timer();
+        System.out.println(timer.getTime(5000000, new HeapSorter(), new ComparableIntegerRandomGenerator()));
+        /*System.out.println(timer.getTime(10000, new ShakerSorter(), new ComparableIntegerRandomGenerator()));
+        System.out.println("------");
+
+        System.out.println(timer.getTime(20000, new HeapSorter(), new ComparableIntegerRandomGenerator()));
+        System.out.println(timer.getTime(20000, new ShakerSorter(), new ComparableIntegerRandomGenerator()));
+        System.out.println("------");
+
+        System.out.println(timer.getTime(40000, new HeapSorter(), new ComparableIntegerRandomGenerator()));
+        System.out.println(timer.getTime(40000, new ShakerSorter(), new ComparableIntegerRandomGenerator()));
+        System.out.println("------");
+
+        System.out.println(timer.getTime(80000, new HeapSorter(), new ComparableIntegerRandomGenerator()));
+        System.out.println(timer.getTime(80000, new ShakerSorter(), new ComparableIntegerRandomGenerator()));
+        System.out.println("------");
+
+        System.out.println(timer.getTime(160000, new HeapSorter(), new ComparableIntegerRandomGenerator()));
+        System.out.println(timer.getTime(160000, new ShakerSorter(), new ComparableIntegerRandomGenerator()));
+        */
     }
 }

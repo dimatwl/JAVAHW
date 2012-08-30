@@ -33,42 +33,34 @@ public class HeapSorter extends AbstractSorter {
 
     @Override
     public <T> void sort(List<T> list, Comparator<? super T> comparator) {
-        buildHeap(list, comparator);
-        shrinkHeap(list, comparator);
-    }
-
-    private <T> void buildHeap(List<T> list, Comparator<? super T> comparator) {
-        for (int child = 1; child < list.size(); child++) {
-            int parent = (child - 1) / 2;
-            while (parent >= 0 && comparator.compare(list.get(parent), list.get(child)) < 0) {
-                Collections.swap(list, parent, child);
-                child = parent;
-                parent = (child - 1) / 2;
-            }
+        buildHeap(list,comparator);
+        int heapSize = list.size();
+        for (int i = list.size() - 1; i > 0; --i){
+            Collections.swap(list, 0, i);
+            --heapSize;
+            heapify(list, 0, heapSize, comparator);
         }
     }
 
-    private <T> void shrinkHeap(List<T> list, Comparator<? super T> comparator) {
-        for (int n = list.size() - 1; n >= 0; n--) {
-            Collections.swap(list, 0, n);
-            int parent = 0;
-            while (true) {
-                int leftChild = 2 * parent + 1;
-                if (leftChild >= n) {
-                    break; // no more children
-                }
-                int rightChild = leftChild + 1;
-                int maxChild = leftChild;
-                if (rightChild < n && comparator.compare(list.get(leftChild), list.get(rightChild)) < 0) {
-                    maxChild = rightChild;
-                }
-                if (comparator.compare(list.get(parent), list.get(maxChild)) < 0) {
-                    Collections.swap(list, parent, maxChild);
-                    parent = maxChild;
-                } else {
-                    break; // exit loop
-                }
-            }
+    private <T> void heapify(List<T> A, int i, int heapSize, Comparator<? super T> comparator) {
+        int left = 2 * i;
+        int right = 2 * i + 1;
+        int largest = i;
+        if (left < heapSize && comparator.compare(A.get(left),A.get(i)) > 0){
+            largest = left;
+        }
+        if (right < heapSize && comparator.compare(A.get(right),A.get(largest)) > 0){
+            largest = right;
+        }
+        if (largest != i){
+            Collections.swap(A, i, largest);
+            heapify(A, largest, heapSize, comparator);
+        }
+    }
+
+    private <T> void buildHeap(List<T> A, Comparator<? super T> comparator){
+        for (int i = A.size()/2; i >= 0; --i){
+            heapify(A, i, A.size(), comparator);
         }
     }
 }

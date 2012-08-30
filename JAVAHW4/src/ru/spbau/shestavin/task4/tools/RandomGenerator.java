@@ -24,7 +24,7 @@ import java.util.List;
  * Interface for generating random objects.
  *
  * @author Dmitriy shestavin
- * @version 1.0 25 Aug 2012
+ * @version 1.0 30 Aug 2012
  */
 public interface RandomGenerator<T> {
 

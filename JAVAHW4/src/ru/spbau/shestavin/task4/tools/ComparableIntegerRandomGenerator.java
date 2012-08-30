@@ -18,33 +18,27 @@
 */
 package ru.spbau.shestavin.task4.tools;
 
-import ru.spbau.shestavin.task4.comparable_data.Comparable;
-import ru.spbau.shestavin.task4.comparators.Comparator;
-import ru.spbau.shestavin.task4.sorters.Sorter;
+import ru.spbau.shestavin.task4.comparable_data.ComparableInteger;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
- * Class for measuring time of sorting.
+ * Class for generating random ComparableIntegers.
  *
  * @author Dmitriy shestavin
- * @version 1.0 29 Aug 2012
+ * @version 1.0 30 Aug 2012
  */
-public class Timer {
+public class ComparableIntegerRandomGenerator implements RandomGenerator<ComparableInteger>{
+    private static Random random = new Random();
 
-    public <T extends Comparable<T>> long getTime(int size, Sorter sorter, RandomGenerator<T> generator) {
-        List<T> list = generator.generate(size);
-        long startTime = System.currentTimeMillis();
-        sorter.sort(list);
-        long endTime = System.currentTimeMillis();
-        return endTime - startTime;
-    }
-
-    public <T> long getTime(int size, Sorter sorter, Comparator<? super T> comparator, RandomGenerator<T> generator) {
-        List<T> list = generator.generate(size);
-        long startTime = System.currentTimeMillis();
-        sorter.sort(list, comparator);
-        long endTime = System.currentTimeMillis();
-        return endTime - startTime;
+    @Override
+    public List<ComparableInteger> generate(int size){
+        List<ComparableInteger> result = new ArrayList<ComparableInteger>(size);
+        for (int i = 0; i < size; ++i) {
+            result.add(new ComparableInteger(random.nextInt(size)));
+        }
+        return result;
     }
 }
