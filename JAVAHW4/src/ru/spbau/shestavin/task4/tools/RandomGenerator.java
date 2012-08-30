@@ -18,12 +18,15 @@
 */
 package ru.spbau.shestavin.task4.tools;
 
+import java.util.List;
+
 /**
- * Created with IntelliJ IDEA.
- * User: DimaTWL
- * Date: 8/30/12
- * Time: 8:20 PM
- * To change this template use File | Settings | File Templates.
+ * Interface for generating random objects.
+ *
+ * @author Dmitriy shestavin
+ * @version 1.0 25 Aug 2012
  */
-public interface RandomGenerator {
+public interface RandomGenerator<T> {
+
+    public List<T> generate(int size);
 }

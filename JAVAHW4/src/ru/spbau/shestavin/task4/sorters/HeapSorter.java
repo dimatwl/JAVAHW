@@ -29,7 +29,7 @@ import java.util.List;
  * @author Dmitriy shestavin
  * @version 1.0 29 Aug 2012
  */
-public class HeapSorter extends AbstractSorter{
+public class HeapSorter extends AbstractSorter {
 
     @Override
     public <T> void sort(List<T> list, Comparator<? super T> comparator) {

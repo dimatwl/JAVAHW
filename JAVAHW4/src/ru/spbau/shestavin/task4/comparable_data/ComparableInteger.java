@@ -62,7 +62,7 @@ public class ComparableInteger implements Comparable<ComparableInteger> {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return value.toString();
     }
 }

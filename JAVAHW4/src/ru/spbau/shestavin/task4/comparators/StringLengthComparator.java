@@ -26,7 +26,7 @@ import ru.spbau.shestavin.task4.comparable_data.ComparableString;
  * @author Dmitriy shestavin
  * @version 1.0 25 Aug 2012
  */
-public class StringLengthComparator implements Comparator<ComparableString>{
+public class StringLengthComparator implements Comparator<ComparableString> {
 
     @Override
     public int compare(ComparableString x, ComparableString y) {

@@ -19,8 +19,8 @@
 package ru.spbau.shestavin.task4;
 
 import ru.spbau.shestavin.task4.comparable_data.ComparableInteger;
-import ru.spbau.shestavin.task4.sorters.Sorter;
 import ru.spbau.shestavin.task4.sorters.ShakerSorter;
+import ru.spbau.shestavin.task4.sorters.Sorter;
 
 import java.util.ArrayList;
 import java.util.List;

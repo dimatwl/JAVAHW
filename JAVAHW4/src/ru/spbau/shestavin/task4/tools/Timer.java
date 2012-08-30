@@ -18,10 +18,9 @@
 */
 package ru.spbau.shestavin.task4.tools;
 
+import ru.spbau.shestavin.task4.comparable_data.Comparable;
 import ru.spbau.shestavin.task4.comparators.Comparator;
 import ru.spbau.shestavin.task4.sorters.Sorter;
-import ru.spbau.shestavin.task4.comparable_data.Comparable;
-
 
 import java.util.List;
 
@@ -33,14 +32,14 @@ import java.util.List;
  */
 public class Timer {
 
-    public <T extends Comparable<T>> long getTime(List<T> list, Sorter sorter){
+    public <T extends Comparable<T>> long getTime(List<T> list, Sorter sorter) {
         long startTime = System.currentTimeMillis();
         sorter.sort(list);
         long endTime = System.currentTimeMillis();
         return endTime - startTime;
     }
 
-    public <T> long getTime(List<T> list, Sorter sorter, Comparator<? super T> comparator){
+    public <T> long getTime(List<T> list, Sorter sorter, Comparator<? super T> comparator) {
         long startTime = System.currentTimeMillis();
         sorter.sort(list, comparator);
         long endTime = System.currentTimeMillis();

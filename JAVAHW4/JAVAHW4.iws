@@ -76,7 +76,7 @@
       <file leaf-file-name="Sorter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/sorters/Sorter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="841" vertical-scroll-proportion="0.0">
+            <state line="25" column="0" selection-start="967" selection-end="1060" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#1523#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -88,9 +88,9 @@
       <file leaf-file-name="RandomGenerator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/tools/RandomGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="17" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.7414722">
+            <state line="30" column="12" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.8061041">
               <folding>
-                <element signature="e#0#1075#0" expanded="true" />
+                <element signature="e#0#1099#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,7 +101,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="31" column="46" selection-start="1125" selection-end="1147" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#0#2700#0" expanded="true" />
+                <element signature="e#0#2701#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -114,7 +114,6 @@
             <state line="41" column="0" selection-start="1471" selection-end="1471" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#1479#0" expanded="true" />
-                <element signature="imports" expanded="true" />
                 <element signature="e#1319#1468#0" expanded="true" />
                 <element signature="e#1457#1458#0" expanded="true" />
               </folding>
@@ -125,10 +124,9 @@
       <file leaf-file-name="Timer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/tools/Timer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="13" selection-start="1194" selection-end="1194" vertical-scroll-proportion="0.0">
+            <state line="32" column="13" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#0#1736#0" expanded="true" />
-                <element signature="imports" expanded="true" />
+                <element signature="e#0#1737#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -140,7 +138,6 @@
             <state line="51" column="0" selection-start="1822" selection-end="1822" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#1830#0" expanded="true" />
-                <element signature="imports" expanded="true" />
                 <element signature="e#1463#1482#0" expanded="true" />
               </folding>
             </state>
@@ -175,7 +172,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="26" column="13" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#0#2065#0" expanded="true" />
+                <element signature="e#0#2066#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -563,7 +560,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="1024" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -578,7 +575,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.249694" sideWeight="0.6710963" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.249694" sideWeight="0.6710963" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32890365" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -650,7 +647,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="13" selection-start="1185" selection-end="1185" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#1801#0" expanded="true" />
+            <element signature="e#0#1802#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -660,7 +657,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="76" selection-start="1314" selection-end="1314" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#1422#0" expanded="true" />
+            <element signature="e#0#1423#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -704,7 +701,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="13" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#2065#0" expanded="true" />
+            <element signature="e#0#2066#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -713,7 +710,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="46" selection-start="1125" selection-end="1147" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#2700#0" expanded="true" />
+            <element signature="e#0#2701#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -724,7 +721,6 @@
         <state line="51" column="0" selection-start="1822" selection-end="1822" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#1830#0" expanded="true" />
-            <element signature="imports" expanded="true" />
             <element signature="e#1463#1482#0" expanded="true" />
           </folding>
         </state>
@@ -745,16 +741,24 @@
         <state line="41" column="0" selection-start="1471" selection-end="1471" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#1479#0" expanded="true" />
-            <element signature="imports" expanded="true" />
             <element signature="e#1319#1468#0" expanded="true" />
             <element signature="e#1457#1458#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/tools/Timer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="13" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#1737#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/sorters/Sorter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="841" vertical-scroll-proportion="0.0">
+        <state line="25" column="0" selection-start="967" selection-end="1060" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#1523#0" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -762,21 +766,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/tools/Timer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="13" selection-start="1194" selection-end="1194" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#1736#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/tools/RandomGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="17" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.7414722">
+        <state line="30" column="12" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.8061041">
           <folding>
-            <element signature="e#0#1075#0" expanded="true" />
+            <element signature="e#0#1099#0" expanded="true" />
           </folding>
         </state>
       </provider>

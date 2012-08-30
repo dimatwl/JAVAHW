@@ -18,8 +18,8 @@
 */
 package ru.spbau.shestavin.task4.sorters;
 
-import ru.spbau.shestavin.task4.comparators.Comparator;
 import ru.spbau.shestavin.task4.comparable_data.Comparable;
+import ru.spbau.shestavin.task4.comparators.Comparator;
 
 import java.util.List;
 
