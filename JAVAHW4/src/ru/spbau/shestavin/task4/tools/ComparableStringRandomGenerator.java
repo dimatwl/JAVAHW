@@ -19,6 +19,7 @@
 package ru.spbau.shestavin.task4.tools;
 
 import ru.spbau.shestavin.task4.comparable_data.ComparableInteger;
+import ru.spbau.shestavin.task4.comparable_data.ComparableString;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,17 +29,33 @@ import java.util.Random;
  * Class for generating random ComparableIntegers.
  *
  * @author Dmitriy shestavin
- * @version 1.0 30 Aug 2012
+ * @version 1.0 31 Aug 2012
  */
-public class ComparableIntegerRandomGenerator implements RandomGenerator<ComparableInteger>{
+public class ComparableStringRandomGenerator implements RandomGenerator<ComparableString> {
     private static final Random random = new Random();
+    private static final char[] symbols = new char[36];
+
+    static {
+        for (int idx = 0; idx < 10; ++idx)
+            symbols[idx] = (char) ('0' + idx);
+        for (int idx = 10; idx < 36; ++idx)
+            symbols[idx] = (char) ('a' + idx - 10);
+    }
 
     @Override
-    public List<ComparableInteger> generate(int size){
-        List<ComparableInteger> result = new ArrayList<ComparableInteger>(size);
+    public List<ComparableString> generate(int size){
+        List<ComparableString> result = new ArrayList<ComparableString>(size);
         for (int i = 0; i < size; ++i) {
-            result.add(new ComparableInteger(random.nextInt(size)));
+            char[] buf = new char[random.nextInt(size) + 1];
+            result.add(new ComparableString(nextString(buf)));
         }
         return result;
+    }
+
+    private String nextString(char[] buf)
+    {
+        for (int idx = 0; idx < buf.length; ++idx)
+            buf[idx] = symbols[random.nextInt(symbols.length)];
+        return new String(buf);
     }
 }

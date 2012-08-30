@@ -19,10 +19,12 @@
 package ru.spbau.shestavin.task4;
 
 import ru.spbau.shestavin.task4.comparable_data.ComparableInteger;
+import ru.spbau.shestavin.task4.comparable_data.ComparableString;
 import ru.spbau.shestavin.task4.sorters.HeapSorter;
 import ru.spbau.shestavin.task4.sorters.ShakerSorter;
 import ru.spbau.shestavin.task4.sorters.Sorter;
 import ru.spbau.shestavin.task4.tools.ComparableIntegerRandomGenerator;
+import ru.spbau.shestavin.task4.tools.ComparableStringRandomGenerator;
 import ru.spbau.shestavin.task4.tools.Timer;
 
 import java.util.ArrayList;
@@ -44,8 +46,11 @@ public class Main {
      */
     public static void main(String[] args) {
         Timer timer = new Timer();
-        System.out.println(timer.getTime(5000000, new HeapSorter(), new ComparableIntegerRandomGenerator()));
-        /*System.out.println(timer.getTime(10000, new ShakerSorter(), new ComparableIntegerRandomGenerator()));
+        List<ComparableString> list = (new ComparableStringRandomGenerator()).generate(10);
+        (new ShakerSorter()).sort(list);
+        System.out.println(list);
+        /*System.out.println(timer.getTime(10000, new HeapSorter(), new ComparableIntegerRandomGenerator()));
+        System.out.println(timer.getTime(10000, new ShakerSorter(), new ComparableIntegerRandomGenerator()));
         System.out.println("------");
 
         System.out.println(timer.getTime(20000, new HeapSorter(), new ComparableIntegerRandomGenerator()));
