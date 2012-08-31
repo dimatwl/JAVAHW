@@ -167,9 +167,9 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="89" selection-start="3476" selection-end="3476" vertical-scroll-proportion="0.553719">
+            <state line="55" column="59" selection-start="2060" selection-end="2060" vertical-scroll-proportion="0.6429752">
               <folding>
-                <element signature="e#0#3747#0" expanded="true" />
+                <element signature="e#0#3877#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -771,9 +771,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="89" selection-start="3476" selection-end="3476" vertical-scroll-proportion="0.553719">
+        <state line="55" column="59" selection-start="2060" selection-end="2060" vertical-scroll-proportion="0.6429752">
           <folding>
-            <element signature="e#0#3747#0" expanded="true" />
+            <element signature="e#0#3877#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>

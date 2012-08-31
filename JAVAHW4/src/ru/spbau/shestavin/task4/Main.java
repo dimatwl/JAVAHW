@@ -47,11 +47,14 @@ public class Main {
      */
     public static void main(String[] args) {
 
-        for (int i = 10; i <= 10000; i *= 10) {
-            compareTime(i);
+        try{
+            for (int i = 10; i <= 10000; i *= 10) {
+                compareTime(i);
+            }
+            demonstration(3);
+        } catch (Throwable e) {
+            System.out.println("Error: " + e.getMessage());
         }
-
-        demonstration(3);
 
     }
 
