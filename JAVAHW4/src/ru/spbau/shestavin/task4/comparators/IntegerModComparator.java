@@ -28,10 +28,10 @@ import ru.spbau.shestavin.task4.comparable_data.ComparableInteger;
  */
 public class IntegerModComparator implements Comparator<ComparableInteger> {
 
-    Integer divisorValue;
+    private final Integer divisorValue;
 
     /**
-     * Creates a new IntegerModComparatorthat that allow to compare
+     * Creates a new IntegerModComparator that allow to compare
      * two ComparableInteger by the remainder of the division by divisorValue.
      *
      * @param divisorValue - value of the divisor.

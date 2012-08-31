@@ -18,34 +18,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/sorters/ShakerSorter.java" line="35" class="ru.spbau.shestavin.task4.sorters.ShakerSorter" package="ru.spbau.shestavin.task4.sorters">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/sorters/HeapSorter.java" line="35" class="ru.spbau.shestavin.task4.sorters.HeapSorter" package="ru.spbau.shestavin.task4.sorters">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -86,6 +58,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="StringLengthComparator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/comparators/StringLengthComparator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="13" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#1423#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractSorter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/sorters/AbstractSorter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="1" selection-start="1478" selection-end="1478" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#1479#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HeapSorter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/sorters/HeapSorter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="51" selection-start="1482" selection-end="1482" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#2264#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShakerSorter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/sorters/ShakerSorter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="61" column="9" selection-start="2316" selection-end="2316" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#2325#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Sorter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/sorters/Sorter.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -98,50 +116,37 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ComparableIntegerRandomGenerator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/tools/ComparableIntegerRandomGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="24" selection-start="1265" selection-end="1265" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#1599#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1421#1440#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ComparableStringRandomGenerator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/tools/ComparableStringRandomGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="58" selection-start="1803" selection-end="1803" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#2108#0" expanded="true" />
+                <element signature="e#1678#1696#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="RandomGenerator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/tools/RandomGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="30" column="38" selection-start="1062" selection-end="1096" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#1099#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ComparableIntegerRandomGenerator.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/tools/ComparableIntegerRandomGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="24" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#1597#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="e#1419#1438#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HeapSorter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/sorters/HeapSorter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="35" selection-start="1347" selection-end="1347" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#2253#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractSorter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/sorters/AbstractSorter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="0" selection-start="1471" selection-end="1471" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#1479#0" expanded="true" />
-                <element signature="e#1319#1468#0" expanded="true" />
-                <element signature="e#1457#1458#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -162,45 +167,10 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="27" selection-start="1871" selection-end="1871" vertical-scroll-proportion="0.41487604">
+            <state line="79" column="89" selection-start="3476" selection-end="3476" vertical-scroll-proportion="0.553719">
               <folding>
-                <element signature="e#0#3188#0" expanded="true" />
+                <element signature="e#0#3747#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ComparableStringRandomGenerator.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/tools/ComparableStringRandomGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="58" selection-start="1869" selection-end="1869" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#2178#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="e#1744#1762#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ComparableInteger.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/comparable_data/ComparableInteger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="4" selection-start="1984" selection-end="2063" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#2066#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ComparableString.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/comparable_data/ComparableString.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="21" selection-start="2028" selection-end="2028" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#2037#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -217,20 +187,20 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task4/comparators/StringLengthComparator.java" />
-        <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task4/comparators/IntegerModComparator.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task4/interfaces/Comparable.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task4/interfaces/Comparator.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task4/sorters/AbstractSorter.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task4/interfaces/Sorter.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task4/Test.java" />
-        <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task4/comparable_data/ComparableInteger.java" />
-        <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task4/sorters/ShakerSorter.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task4/tools/RandomGenerator.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task4/tools/Timer.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task4/sorters/HeapSorter.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task4/tools/ComparableIntegerRandomGenerator.java" />
-        <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task4/comparable_data/ComparableString.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task4/tools/ComparableStringRandomGenerator.java" />
+        <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task4/comparable_data/ComparableString.java" />
+        <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task4/sorters/ShakerSorter.java" />
+        <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task4/comparable_data/ComparableInteger.java" />
+        <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task4/comparators/IntegerModComparator.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task4/Main.java" />
       </list>
     </option>
@@ -586,7 +556,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280757" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -659,39 +629,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/comparators/IntegerModComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="13" selection-start="1185" selection-end="1185" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#1802#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/comparators/StringLengthComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="76" selection-start="1314" selection-end="1314" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#1423#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JAVAHW4.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/comparators/Comparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="11" selection-start="1730" selection-end="1730" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#1756#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -704,23 +645,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/sorters/ShakerSorter.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/comparable_data/ComparableInteger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="23" selection-start="1772" selection-end="1772" vertical-scroll-proportion="0.0">
+        <state line="28" column="17" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#2196#0" expanded="true" />
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#2072#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/comparable_data/ComparableString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="6" selection-start="1603" selection-end="1603" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#2043#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/comparators/Comparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="11" selection-start="1731" selection-end="1731" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#1756#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/comparators/IntegerModComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="0" selection-start="1812" selection-end="1812" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#1812#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/comparators/StringLengthComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="13" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#1423#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/sorters/AbstractSorter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1471" selection-end="1471" vertical-scroll-proportion="0.0">
+        <state line="42" column="1" selection-start="1478" selection-end="1478" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#1479#0" expanded="true" />
-            <element signature="e#1319#1468#0" expanded="true" />
-            <element signature="e#1457#1458#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/sorters/HeapSorter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="51" selection-start="1482" selection-end="1482" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#2264#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/sorters/ShakerSorter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="9" selection-start="2316" selection-end="2316" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#2325#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -731,6 +725,27 @@
           <folding>
             <element signature="e#0#1523#0" expanded="true" />
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/tools/ComparableIntegerRandomGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="24" selection-start="1265" selection-end="1265" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#1599#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1421#1440#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/tools/ComparableStringRandomGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="58" selection-start="1803" selection-end="1803" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#2108#0" expanded="true" />
+            <element signature="e#1678#1696#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -754,61 +769,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/sorters/HeapSorter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="35" selection-start="1347" selection-end="1347" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#2253#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/comparable_data/ComparableInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="4" selection-start="1984" selection-end="2063" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#2066#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/comparable_data/ComparableString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="21" selection-start="2028" selection-end="2028" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#2037#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/tools/ComparableIntegerRandomGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="24" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#1597#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#1419#1438#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/tools/ComparableStringRandomGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="58" selection-start="1869" selection-end="1869" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#2178#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#1744#1762#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task4/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="27" selection-start="1871" selection-end="1871" vertical-scroll-proportion="0.41487604">
+        <state line="79" column="89" selection-start="3476" selection-end="3476" vertical-scroll-proportion="0.553719">
           <folding>
-            <element signature="e#0#3188#0" expanded="true" />
+            <element signature="e#0#3747#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>

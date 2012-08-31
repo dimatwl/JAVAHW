@@ -18,7 +18,6 @@
 */
 package ru.spbau.shestavin.task4.tools;
 
-import ru.spbau.shestavin.task4.comparable_data.ComparableInteger;
 import ru.spbau.shestavin.task4.comparable_data.ComparableString;
 
 import java.util.ArrayList;
@@ -43,7 +42,7 @@ public class ComparableStringRandomGenerator implements RandomGenerator<Comparab
     }
 
     @Override
-    public List<ComparableString> generate(int size){
+    public List<ComparableString> generate(int size) {
         List<ComparableString> result = new ArrayList<ComparableString>(size);
         for (int i = 0; i < size; ++i) {
             char[] buf = new char[random.nextInt(size) + 1];
@@ -52,8 +51,7 @@ public class ComparableStringRandomGenerator implements RandomGenerator<Comparab
         return result;
     }
 
-    private String nextString(char[] buf)
-    {
+    private String nextString(char[] buf) {
         for (int idx = 0; idx < buf.length; ++idx)
             buf[idx] = symbols[random.nextInt(symbols.length)];
         return new String(buf);

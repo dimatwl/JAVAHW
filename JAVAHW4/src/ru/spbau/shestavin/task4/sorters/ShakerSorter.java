@@ -33,30 +33,32 @@ public class ShakerSorter extends AbstractSorter {
 
     @Override
     public <T> void sort(List<T> list, Comparator<? super T> comparator) {
-        int Left = 0;
-        int Right = list.size() - 1; //границы сортировки
-        int Last = list.size() - 1;       //место последней перестановки
-        do {
-            //Сдвигаем к концу массива "легкие элементы"
-            for (int i = Right; i > Left; i--) {
-                if (comparator.compare(list.get(i - 1), list.get(i)) > 0) {
-                    Collections.swap(list, i - 1, i);
-                    Last = i; //Запомнить место пследней перестановки
+        if (list.size() > 1) {
+            int Left = 0;
+            int Right = list.size() - 1; //границы сортировки
+            int Last = list.size() - 1;       //место последней перестановки
+            do {
+                //Сдвигаем к концу массива "легкие элементы"
+                for (int i = Right; i > Left; i--) {
+                    if (comparator.compare(list.get(i - 1), list.get(i)) > 0) {
+                        Collections.swap(list, i - 1, i);
+                        Last = i; //Запомнить место пследней перестановки
+                    }
                 }
-            }
 
-            Left = Last;
+                Left = Last;
 
-            //Сдвигаем к началу массива "тяжелые элементы"
-            for (int i = Left; i <= Right; i++) {
-                if (comparator.compare(list.get(i - 1), list.get(i)) > 0) {
-                    Collections.swap(list, i - 1, i);
-                    Last = i; //Запомнить место пследней перестановки
+                //Сдвигаем к началу массива "тяжелые элементы"
+                for (int i = Left; i <= Right; i++) {
+                    if (comparator.compare(list.get(i - 1), list.get(i)) > 0) {
+                        Collections.swap(list, i - 1, i);
+                        Last = i; //Запомнить место пследней перестановки
+                    }
                 }
-            }
 
-            Right = Last - 1;
+                Right = Last - 1;
+            }
+            while (Left <= Right);
         }
-        while (Left <= Right);
     }
 }

@@ -26,7 +26,7 @@ package ru.spbau.shestavin.task4.comparable_data;
  */
 public class ComparableInteger implements Comparable<ComparableInteger> {
 
-    private Integer value;
+    private final Integer value;
 
     @Override
     public int compareTo(ComparableInteger x) {

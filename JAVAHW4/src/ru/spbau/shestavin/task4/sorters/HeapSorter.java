@@ -33,9 +33,9 @@ public class HeapSorter extends AbstractSorter {
 
     @Override
     public <T> void sort(List<T> list, Comparator<? super T> comparator) {
-        buildHeap(list,comparator);
+        buildHeap(list, comparator);
         int heapSize = list.size();
-        for (int i = list.size() - 1; i > 0; --i){
+        for (int i = list.size() - 1; i > 0; --i) {
             Collections.swap(list, 0, i);
             --heapSize;
             heapify(list, 0, heapSize, comparator);
@@ -46,20 +46,20 @@ public class HeapSorter extends AbstractSorter {
         int left = 2 * i;
         int right = 2 * i + 1;
         int largest = i;
-        if (left < heapSize && comparator.compare(A.get(left),A.get(i)) > 0){
+        if (left < heapSize && comparator.compare(A.get(left), A.get(i)) > 0) {
             largest = left;
         }
-        if (right < heapSize && comparator.compare(A.get(right),A.get(largest)) > 0){
+        if (right < heapSize && comparator.compare(A.get(right), A.get(largest)) > 0) {
             largest = right;
         }
-        if (largest != i){
+        if (largest != i) {
             Collections.swap(A, i, largest);
             heapify(A, largest, heapSize, comparator);
         }
     }
 
-    private <T> void buildHeap(List<T> A, Comparator<? super T> comparator){
-        for (int i = A.size()/2; i >= 0; --i){
+    private <T> void buildHeap(List<T> A, Comparator<? super T> comparator) {
+        for (int i = A.size() / 2; i >= 0; --i) {
             heapify(A, i, A.size(), comparator);
         }
     }

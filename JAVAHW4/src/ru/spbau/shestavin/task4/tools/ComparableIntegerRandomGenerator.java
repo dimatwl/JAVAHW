@@ -30,11 +30,11 @@ import java.util.Random;
  * @author Dmitriy shestavin
  * @version 1.0 30 Aug 2012
  */
-public class ComparableIntegerRandomGenerator implements RandomGenerator<ComparableInteger>{
+public class ComparableIntegerRandomGenerator implements RandomGenerator<ComparableInteger> {
     private static final Random random = new Random();
 
     @Override
-    public List<ComparableInteger> generate(int size){
+    public List<ComparableInteger> generate(int size) {
         List<ComparableInteger> result = new ArrayList<ComparableInteger>(size);
         for (int i = 0; i < size; ++i) {
             result.add(new ComparableInteger(random.nextInt(size)));
