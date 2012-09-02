@@ -59,7 +59,7 @@ public class FileSystemWalker {
         });
     }
 
-    private void writeDir(File inpEntry, String inpPrefix, boolean isFirstEntry) throws IOException{
+    private void writeDir(File inpEntry, StringBuilder inpPrefix, boolean isFirstEntry) throws IOException{
         boolean accessDenied = false;
         List<File> subEntries;
         try {
@@ -73,34 +73,34 @@ public class FileSystemWalker {
             accessDenied = true;
             subEntries = null;
         }
-        String entryName = "";
+        StringBuilder entryName = new StringBuilder();
         if (isFirstEntry) {
-            entryName = inpEntry.getName();
+            entryName.append(inpEntry.getName());
             isFirstEntry = false;
         } else if (inpPrefix.charAt(inpPrefix.length() - 1) != '|') {
-            entryName = inpPrefix.substring(0, inpPrefix.length() - 1) + '|' + '_' + inpEntry.getName();
+            entryName.append(inpPrefix.substring(0, inpPrefix.length() - 1)).append('|').append('_').append(inpEntry.getName());
         } else {
-            entryName = inpPrefix + '_' + inpEntry.getName();
+            entryName.append(inpPrefix).append('_').append(inpEntry.getName());
         }
         if (accessDenied && inpEntry.isDirectory()) {
             myStream.write((entryName + "(access denied)").getBytes());
             myStream.println();
         } else if (subEntries == null || subEntries.isEmpty()) {
-            myStream.write(entryName.getBytes());
+            myStream.write(entryName.toString().getBytes());
             myStream.println();
         } else {
-            myStream.write(entryName.getBytes());
+            myStream.write(entryName.toString().getBytes());
             myStream.println();
-            String currentOffset = "";
+            StringBuilder currentOffset = new StringBuilder();
             for (int i = 0; i < inpEntry.getName().length() + 1; ++i) {
-                currentOffset += ' ';
+                currentOffset.append(' ');
             }
             //newPrefix += '|';
             sort(subEntries);
             for (int i = 0; i < subEntries.size() - 1; ++i) {
-                writeDir(subEntries.get(i), inpPrefix + currentOffset + '|', false);
+                writeDir(subEntries.get(i), (new StringBuilder()).append(inpPrefix).append(currentOffset).append('|'), false);
             }
-            writeDir(subEntries.get(subEntries.size() - 1), inpPrefix + currentOffset + ' ', false);
+            writeDir(subEntries.get(subEntries.size() - 1), (new StringBuilder()).append(inpPrefix).append(currentOffset).append(' '), false);
         }
     }
 
@@ -122,7 +122,7 @@ public class FileSystemWalker {
      * to destination specified in constructor.
      */
     public void write() throws IOException{
-        writeDir(myRoot, "", true);
+        writeDir(myRoot, new StringBuilder(), true);
         myStream.flush();
     }
 

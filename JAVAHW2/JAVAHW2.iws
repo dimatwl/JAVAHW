@@ -70,14 +70,14 @@
       <file leaf-file-name="FileSystemWalker.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task2/FileSystemWalker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="63" selection-start="3472" selection-end="3472" vertical-scroll-proportion="0.65050167">
+            <state line="105" column="0" selection-start="4087" selection-end="4087" vertical-scroll-proportion="0.770903">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1572#1763#0" expanded="true" />
                 <element signature="e#1752#1753#0" expanded="true" />
                 <element signature="e#1876#2058#0" expanded="true" />
                 <element signature="e#2047#2048#0" expanded="true" />
-                <element signature="e#5319#5325#0" expanded="true" />
+                <element signature="e#5550#5556#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -450,14 +450,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task2/FileSystemWalker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="63" selection-start="3472" selection-end="3472" vertical-scroll-proportion="0.65050167">
+        <state line="105" column="0" selection-start="4087" selection-end="4087" vertical-scroll-proportion="0.770903">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1572#1763#0" expanded="true" />
             <element signature="e#1752#1753#0" expanded="true" />
             <element signature="e#1876#2058#0" expanded="true" />
             <element signature="e#2047#2048#0" expanded="true" />
-            <element signature="e#5319#5325#0" expanded="true" />
+            <element signature="e#5550#5556#0" expanded="true" />
           </folding>
         </state>
       </provider>
