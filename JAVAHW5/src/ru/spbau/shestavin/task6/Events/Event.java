@@ -33,12 +33,15 @@ public abstract class Event {
     private List<ActionListener> listeners = new ArrayList<ActionListener>();
 
     /**
-     * TODO write docs
+     * Describes whether event ready or not.
+     *
+     * @return status of event.
      */
     public abstract boolean ready();
 
     /**
-     * TODO write docs
+     * Calls actionPerformed for all registered ActionListeners.
+     * At the end calls reset().
      */
     public void fireEvent() {
         for (ActionListener listener : listeners) {
@@ -48,14 +51,16 @@ public abstract class Event {
     }
 
     /**
-     * TODO write docs
+     * Registers new ActionListener.
+     *
+     * @param actionListener - new ActionListener to be registered.
      */
     public void addListener(ActionListener actionListener) {
         listeners.add(actionListener);
     }
 
     /**
-     * TODO write docs
+     * Resets state of Event.
      */
     public abstract void reset();
 }

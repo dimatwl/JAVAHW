@@ -19,13 +19,13 @@
 package ru.spbau.shestavin.task6.Events;
 
 /**
- * TODO write docs
+ * Describes event witch is ready in 10 seconds since last fireEvent() call.
  *
  * @author Dmitriy shestavin
  * @version 1.0 3 Sep 2012
  */
 public class TimeEvent extends Event {
-    private long readyTime = System.currentTimeMillis() + delay;
+    private long readyTime = System.currentTimeMillis();
     private static final long delay = 10000;
 
     @Override

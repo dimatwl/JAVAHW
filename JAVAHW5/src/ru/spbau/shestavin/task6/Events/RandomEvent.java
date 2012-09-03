@@ -21,7 +21,7 @@ package ru.spbau.shestavin.task6.Events;
 import java.util.Random;
 
 /**
- * TODO write docs
+ * Describes event witch is ready only in half calls of ready().
  *
  * @author Dmitriy shestavin
  * @version 1.0 3 Sep 2012
