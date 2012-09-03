@@ -59,7 +59,7 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="Event.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task6/Events/Event.java">
+        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task5/Events/Event.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="45" column="25" selection-start="1512" selection-end="1521" vertical-scroll-proportion="0.0">
               <folding>
@@ -72,7 +72,7 @@
         </entry>
       </file>
       <file leaf-file-name="TimeEvent.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task6/Events/TimeEvent.java">
+        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task5/Events/TimeEvent.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="21" column="76" selection-start="964" selection-end="964" vertical-scroll-proportion="0.0">
               <folding>
@@ -83,7 +83,7 @@
         </entry>
       </file>
       <file leaf-file-name="RandomEvent.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task6/Events/RandomEvent.java">
+        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task5/Events/RandomEvent.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="23" column="3" selection-start="917" selection-end="978" vertical-scroll-proportion="0.0">
               <folding>
@@ -94,9 +94,9 @@
         </entry>
       </file>
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task6/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task5/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="9" selection-start="3081" selection-end="3081" vertical-scroll-proportion="0.7364975">
+            <state line="60" column="60" selection-start="2144" selection-end="2144" vertical-scroll-proportion="1.7675941">
               <folding>
                 <element signature="e#0#3690#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -126,6 +126,7 @@
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task6/Events/RandomEvent.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task6/Events/TimeEvent.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task6/Main.java" />
+        <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task5/Main.java" />
       </list>
     </option>
   </component>
@@ -202,7 +203,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="task6" />
+              <option name="myItemId" value="task5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -220,7 +221,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="task6" />
+              <option name="myItemId" value="task5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -250,7 +251,7 @@
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="ru.spbau.shestavin.task6.Main" />
+      <option name="MAIN_CLASS_NAME" value="ru.spbau.shestavin.task5.Main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -416,7 +417,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.249694" sideWeight="0.67087275" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32912722" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32912722" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -483,7 +484,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task6/Events/Event.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task5/Events/Event.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="25" selection-start="1512" selection-end="1521" vertical-scroll-proportion="0.0">
           <folding>
@@ -494,7 +495,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task6/Events/RandomEvent.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task5/Events/RandomEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="3" selection-start="917" selection-end="978" vertical-scroll-proportion="0.0">
           <folding>
@@ -503,7 +504,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task6/Events/TimeEvent.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task5/Events/TimeEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="76" selection-start="964" selection-end="964" vertical-scroll-proportion="0.0">
           <folding>
@@ -512,9 +513,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task6/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task5/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="9" selection-start="3081" selection-end="3081" vertical-scroll-proportion="0.7364975">
+        <state line="60" column="60" selection-start="2144" selection-end="2144" vertical-scroll-proportion="1.7675941">
           <folding>
             <element signature="e#0#3690#0" expanded="true" />
             <element signature="imports" expanded="true" />

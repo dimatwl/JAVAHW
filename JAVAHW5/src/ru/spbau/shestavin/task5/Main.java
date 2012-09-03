@@ -16,11 +16,11 @@
 * ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
 * DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
 */
-package ru.spbau.shestavin.task6;
+package ru.spbau.shestavin.task5;
 
-import ru.spbau.shestavin.task6.Events.Event;
-import ru.spbau.shestavin.task6.Events.RandomEvent;
-import ru.spbau.shestavin.task6.Events.TimeEvent;
+import ru.spbau.shestavin.task5.Events.Event;
+import ru.spbau.shestavin.task5.Events.RandomEvent;
+import ru.spbau.shestavin.task5.Events.TimeEvent;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

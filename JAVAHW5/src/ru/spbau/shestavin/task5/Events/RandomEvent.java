@@ -16,25 +16,25 @@
 * ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
 * DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
 */
-package ru.spbau.shestavin.task6.Events;
+package ru.spbau.shestavin.task5.Events;
+
+import java.util.Random;
 
 /**
- * Describes event witch is ready in 10 seconds since last fireEvent() call.
+ * Describes event witch is ready only in half calls of ready().
  *
  * @author Dmitriy shestavin
  * @version 1.0 3 Sep 2012
  */
-public class TimeEvent extends Event {
-    private long readyTime = System.currentTimeMillis();
-    private static final long delay = 10000;
+public class RandomEvent extends Event {
+    private final static Random random = new Random();
 
     @Override
     public boolean ready() {
-        return (readyTime <= System.currentTimeMillis());
+        return ((random.nextInt() % 2) == 0);
     }
 
     @Override
     public void reset() {
-        readyTime = System.currentTimeMillis() + delay;
     }
 }
