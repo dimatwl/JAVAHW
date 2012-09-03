@@ -50,5 +50,6 @@ public class Main {
         } else {
             System.out.println("There is no parameters, sorry...");
         }
+
     }
 }
