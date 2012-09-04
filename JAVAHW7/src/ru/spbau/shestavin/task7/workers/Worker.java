@@ -21,7 +21,8 @@ package ru.spbau.shestavin.task7.workers;
 import java.util.Queue;
 
 /**
- * TODO write docs
+ * Working daemon thread. Takes tasks from taskQueue and runs them.
+ * Works until thread not interrupted.
  *
  * @author Dmitriy shestavin
  * @version 1.0 4 Sep 2012
@@ -37,11 +38,19 @@ public class Worker {
 
     private final Queue<Runnable> taskQueue;
 
+    /**
+     * Creates new Worker.
+     *
+     * @param taskQueue - queue with tasks to run.
+     */
     public Worker(Queue<Runnable> taskQueue) {
         this.taskQueue = taskQueue;
         thread.setDaemon(true);
     }
 
+    /**
+     * Starts worker cycle in separate thread.
+     */
     public void start() {
         thread.start();
     }
@@ -49,6 +58,9 @@ public class Worker {
     private void mainCycle() {
         try {
             while (true) {
+                if (thread.isInterrupted()) {
+                    break;
+                }
                 synchronized (taskQueue) {
                     Runnable task = taskQueue.poll();
                     if (null != task) {

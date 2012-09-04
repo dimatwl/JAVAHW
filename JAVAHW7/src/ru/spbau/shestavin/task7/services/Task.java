@@ -19,7 +19,8 @@
 package ru.spbau.shestavin.task7.services;
 
 /**
- * TODO write docs
+ * Abstract class to represent computation task. T - type of input data.
+ * E - type of output data.
  *
  * @author Dmitriy shestavin
  * @version 1.0 4 Sep 2012
@@ -38,21 +39,28 @@ public abstract class Task<T, E> implements Runnable {
     }
 
     /**
-     * TODO write docs
+     * Creates new task.
+     *
+     * @param inputData - will be passed to compute-method on run-method call.
      */
     public Task(T inputData) {
         this.inputData = inputData;
     }
 
     /**
-     * TODO write docs
+     * Getter for result.
+     *
+     * @return result of computation.
      */
     public E getResult() {
         return result;
     }
 
     /**
-     * TODO write docs
+     * This method done all computations.
+     *
+     * @param inputData - input data to algorithm.
+     * @return result of algorithm work.
      */
     protected abstract E compute(T inputData) throws InterruptedException;
 }

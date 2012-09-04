@@ -18,21 +18,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task7/workers/Worker.java" line="49" class="ru.spbau.shestavin.task7.Worker" package="ru.spbau.shestavin.task7">
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="&#13;&#13;JAVA" />
-        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
-      </breakpoint>
-    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -90,37 +75,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task7/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="49" selection-start="1737" selection-end="1737" vertical-scroll-proportion="0.0">
+            <state line="27" column="3" selection-start="1101" selection-end="1101" vertical-scroll-proportion="0.79541737">
               <folding>
-                <element signature="e#0#2301#0" expanded="true" />
+                <element signature="e#0#2375#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#1633#1646#0" expanded="true" />
+                <element signature="e#1707#1720#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Object.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/src.zip!/java/lang/Object.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="382" column="29" selection-start="17643" selection-end="17643" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StupidChild.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="StupidChild.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task7/users/StupidChild.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="3" selection-start="978" selection-end="978" vertical-scroll-proportion="0.64811784">
+            <state line="81" column="5" selection-start="2848" selection-end="2848" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#0#3063#0" expanded="true" />
+                <element signature="e#0#3679#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#1421#1524#0" expanded="true" />
-                <element signature="e#1517#1518#0" expanded="true" />
+                <element signature="e#1538#1641#0" expanded="true" />
+                <element signature="e#1634#1635#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -129,10 +105,10 @@
       <file leaf-file-name="DistributedIncrementor.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task7/services/DistributedIncrementor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="7" selection-start="1241" selection-end="1256" vertical-scroll-proportion="0.0">
+            <state line="32" column="85" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#0#1803#0" expanded="true" />
-                <element signature="e#1373#1391#0" expanded="true" />
+                <element signature="e#0#2105#0" expanded="true" />
+                <element signature="e#1675#1693#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -141,11 +117,11 @@
       <file leaf-file-name="Worker.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task7/workers/Worker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="0" selection-start="1789" selection-end="1789" vertical-scroll-proportion="0.0">
+            <state line="50" column="4" selection-start="1532" selection-end="1590" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#0#1994#0" expanded="true" />
-                <element signature="e#1064#1167#0" expanded="true" />
-                <element signature="e#1160#1161#0" expanded="true" />
+                <element signature="e#0#2337#0" expanded="true" />
+                <element signature="e#1152#1255#0" expanded="true" />
+                <element signature="e#1248#1249#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,9 +130,10 @@
       <file leaf-file-name="WorkerPool.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task7/workers/WorkerPool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="0" selection-start="1611" selection-end="1611" vertical-scroll-proportion="0.0">
+            <state line="60" column="25" selection-start="1855" selection-end="1855" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#0#1729#0" expanded="true" />
+                <element signature="e#0#1942#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -165,9 +142,9 @@
       <file leaf-file-name="Task.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task7/services/Task.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="7" selection-start="1434" selection-end="1434" vertical-scroll-proportion="0.0">
+            <state line="49" column="3" selection-start="1569" selection-end="1652" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#0#1610#0" expanded="true" />
+                <element signature="e#0#1946#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -197,9 +174,13 @@
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task7/DistributedIncrementor.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task7/Worker.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task7/WorkerPool.java" />
-        <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task7/Main.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task7/StupidChild.java" />
+        <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task7/Main.java" />
+        <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task7/workers/Worker.java" />
+        <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task7/services/Task.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task7/users/StupidChild.java" />
+        <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task7/workers/WorkerPool.java" />
+        <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task7/services/DistributedIncrementor.java" />
       </list>
     </option>
   </component>
@@ -535,7 +516,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -550,7 +531,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.249694" sideWeight="0.67087275" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.249694" sideWeight="0.67087275" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32912722" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -627,69 +608,70 @@
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="382" column="29" selection-start="17643" selection-end="17643" vertical-scroll-proportion="0.0">
+        <state line="382" column="29" selection-start="17643" selection-end="17643" vertical-scroll-proportion="0.29623568">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task7/workers/WorkerPool.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task7/users/StupidChild.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="0" selection-start="1611" selection-end="1611" vertical-scroll-proportion="0.0">
+        <state line="81" column="5" selection-start="2848" selection-end="2848" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#1729#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task7/workers/Worker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="0" selection-start="1789" selection-end="1789" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#1994#0" expanded="true" />
-            <element signature="e#1064#1167#0" expanded="true" />
-            <element signature="e#1160#1161#0" expanded="true" />
+            <element signature="e#0#3679#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1538#1641#0" expanded="true" />
+            <element signature="e#1634#1635#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task7/services/Task.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="7" selection-start="1434" selection-end="1434" vertical-scroll-proportion="0.0">
+        <state line="49" column="3" selection-start="1569" selection-end="1652" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#1610#0" expanded="true" />
+            <element signature="e#0#1946#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task7/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task7/workers/Worker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="49" selection-start="1737" selection-end="1737" vertical-scroll-proportion="0.0">
+        <state line="50" column="4" selection-start="1532" selection-end="1590" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#2301#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#1633#1646#0" expanded="true" />
+            <element signature="e#0#2337#0" expanded="true" />
+            <element signature="e#1152#1255#0" expanded="true" />
+            <element signature="e#1248#1249#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task7/services/DistributedIncrementor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="7" selection-start="1241" selection-end="1256" vertical-scroll-proportion="0.0">
+        <state line="32" column="85" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#1803#0" expanded="true" />
-            <element signature="e#1373#1391#0" expanded="true" />
+            <element signature="e#0#2105#0" expanded="true" />
+            <element signature="e#1675#1693#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task7/users/StupidChild.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task7/workers/WorkerPool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="3" selection-start="978" selection-end="978" vertical-scroll-proportion="0.64811784">
+        <state line="60" column="25" selection-start="1855" selection-end="1855" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#3063#0" expanded="true" />
+            <element signature="e#0#1942#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1421#1524#0" expanded="true" />
-            <element signature="e#1517#1518#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task7/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="3" selection-start="1101" selection-end="1101" vertical-scroll-proportion="0.79541737">
+          <folding>
+            <element signature="e#0#2375#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1707#1720#0" expanded="true" />
           </folding>
         </state>
       </provider>

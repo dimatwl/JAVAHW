@@ -24,7 +24,7 @@ import java.util.List;
 import java.util.Queue;
 
 /**
- * TODO write docs
+ * Pool of workers witch works on the same queue.
  *
  * @author Dmitriy shestavin
  * @version 1.0 4 Sep 2012
@@ -34,7 +34,9 @@ public class WorkerPool {
     private final Queue<Runnable> taskQueue;
 
     /**
-     * TODO write docs
+     * Creates new WorkerPool.
+     *
+     * @param size - number of workers to create.
      */
     public WorkerPool(int size) {
         workers = new ArrayList<Worker>(size);
@@ -45,7 +47,7 @@ public class WorkerPool {
     }
 
     /**
-     * TODO write docs
+     * Starts all workers in separate threads.
      */
     public void start() {
         for (Worker worker : workers) {
@@ -54,7 +56,9 @@ public class WorkerPool {
     }
 
     /**
-     * TODO write docs
+     * Getter for taskQueue. This queue should be used by DistributedIncrementors.
+     *
+     * @return taskQueue.
      */
     public Queue<Runnable> getTaskQueue() {
         return taskQueue;

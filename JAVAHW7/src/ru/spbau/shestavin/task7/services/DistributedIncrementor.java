@@ -21,7 +21,7 @@ package ru.spbau.shestavin.task7.services;
 import java.util.Queue;
 
 /**
- * TODO write docs
+ * Service to increment numbers. Creates task and put it to the queue then waits task to complete.
  *
  * @author Dmitriy shestavin
  * @version 1.0 4 Sep 2012
@@ -30,14 +30,18 @@ public class DistributedIncrementor {
     private final Queue<Runnable> taskQueue;
 
     /**
-     * TODO write docs
+     * Creates new DistributedIncrementor. taskQueue should be taken from WorkerPool.
+     *
+     * @param taskQueue - queue with tasks to run.
      */
     public DistributedIncrementor(Queue<Runnable> taskQueue) {
         this.taskQueue = taskQueue;
     }
 
     /**
-     * TODO write docs
+     * Creates task and put it to the queue then waits task to complete.
+     *
+     * @param i - number to be incremented.
      */
     public int increment(int i) throws InterruptedException {
         Task<Integer, Integer> task = new Task<Integer, Integer>(i) {

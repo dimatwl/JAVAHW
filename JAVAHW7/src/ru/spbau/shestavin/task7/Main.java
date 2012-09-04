@@ -35,7 +35,8 @@ public class Main {
 
     /**
      * Entry point of the program.
-     * TODO write description
+     * Creates 5 workers and 5 stupudChilds and start them all.
+     * Then waits for all stupudChilds.
      *
      * @param args contains arguments from command line.
      */

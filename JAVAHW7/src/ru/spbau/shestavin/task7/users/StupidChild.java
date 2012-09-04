@@ -23,7 +23,8 @@ import ru.spbau.shestavin.task7.services.DistributedIncrementor;
 import java.util.Random;
 
 /**
- * TODO write docs
+ * Client thread. Uses DistributedIncrementor to increment numbers.
+ * Generates random numbers, increments them and prints to console.
  *
  * @author Dmitriy shestavin
  * @version 1.0 4 Sep 2012
@@ -44,7 +45,13 @@ public class StupidChild {
     });
 
     /**
-     * TODO write docs
+     * Creates new StupidChild.
+     *
+     * @param id                  - identification number.
+     * @param numberOfIncrements  - number of "numbers" to increment.
+     * @param startIntervalNumber - lower edge of interval to generate random numbers.
+     * @param intervalWidth       - width of interval to generate random numbers.
+     * @param incrementor         - increment service.
      */
     public StupidChild(int id, int numberOfIncrements, int startIntervalNumber, int intervalWidth, DistributedIncrementor incrementor) {
         this.id = id;
@@ -55,7 +62,9 @@ public class StupidChild {
     }
 
     /**
-     * TODO write docs
+     * Checks if all numbers are incremented.
+     *
+     * @return true if all numbers are incremented, false - otherwise.
      */
     public boolean isFinished() {
         return finished;
@@ -66,7 +75,7 @@ public class StupidChild {
     }
 
     /**
-     * TODO write docs
+     * Starts StupidChild cycle in separate thread.
      */
     public void start() {
         thread.start();
