@@ -16,8 +16,13 @@
 * ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
 * DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
 */
-package ru.spbau.shestavin.task7;
+package ru.spbau.shestavin.task7.workers;
 
+import ru.spbau.shestavin.task7.workers.Worker;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 /**
@@ -26,43 +31,34 @@ import java.util.Queue;
  * @author Dmitriy shestavin
  * @version 1.0 4 Sep 2012
  */
-public class Worker {
-
-    private final Thread thread = new Thread(new Runnable() {
-        @Override
-        public void run() {
-            mainCycle();
-        }
-    });
-
+public class WorkerPool {
+    private final List<Worker> workers;
     private final Queue<Runnable> taskQueue;
 
-    public Worker(Queue<Runnable> taskQueue) {
-        this.taskQueue = taskQueue;
-        thread.setDaemon(true);
-    }
-
-    public void start() {
-        thread.start();
-    }
-
-    private void mainCycle() {
-        try {
-            while (true) {
-                synchronized (taskQueue) {
-                    Runnable task = taskQueue.poll();
-                    if (null != task) {
-                        synchronized (task) {
-                            task.run();
-                            task.notify();
-                        }
-                    } else {
-                        taskQueue.wait();
-                    }
-                }
-            }
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
+    /**
+     * TODO write docs
+     */
+    public WorkerPool(int size) {
+        workers = new ArrayList<Worker>(size);
+        taskQueue = new LinkedList<Runnable>();
+        for (int i = 0; i < size; ++i) {
+            workers.add(new Worker(taskQueue));
         }
+    }
+
+    /**
+     * TODO write docs
+     */
+    public void start() {
+        for (Worker worker : workers) {
+            worker.start();
+        }
+    }
+
+    /**
+     * TODO write docs
+     */
+    public Queue<Runnable> getTaskQueue() {
+        return taskQueue;
     }
 }

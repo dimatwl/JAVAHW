@@ -18,6 +18,10 @@
 */
 package ru.spbau.shestavin.task7;
 
+import ru.spbau.shestavin.task7.services.DistributedIncrementor;
+import ru.spbau.shestavin.task7.users.StupidChild;
+import ru.spbau.shestavin.task7.workers.WorkerPool;
+
 import java.util.ArrayList;
 import java.util.List;
 

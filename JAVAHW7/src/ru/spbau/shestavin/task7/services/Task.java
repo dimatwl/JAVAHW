@@ -16,9 +16,7 @@
 * ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
 * DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
 */
-package ru.spbau.shestavin.task7;
-
-import java.util.Queue;
+package ru.spbau.shestavin.task7.services;
 
 /**
  * TODO write docs
@@ -26,33 +24,37 @@ import java.util.Queue;
  * @author Dmitriy shestavin
  * @version 1.0 4 Sep 2012
  */
-public class DistributedIncrementor {
-    private final Queue<Runnable> taskQueue;
+public abstract class Task<T, E> implements Runnable {
+    private E result = null;
+    private T inputData;
 
-    /**
-     * TODO write docs
-     */
-    public DistributedIncrementor(Queue<Runnable> taskQueue) {
-        this.taskQueue = taskQueue;
-    }
-
-    /**
-     * TODO write docs
-     */
-    public int increment(int i) throws InterruptedException {
-        Task<Integer, Integer> task = new Task<Integer, Integer>(i) {
-            @Override
-            protected Integer compute(Integer inputData) throws InterruptedException {
-                return inputData + 1;
-            }
-        };
-        synchronized (task) {
-            synchronized (taskQueue) {
-                taskQueue.offer(task);
-                taskQueue.notify();
-            }
-            task.wait();
+    @Override
+    public void run() {
+        try {
+            result = compute(inputData);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
         }
-        return task.getResult();
     }
+
+    /**
+     * TODO write docs
+     */
+    public Task(T inputData) {
+        this.inputData = inputData;
+    }
+
+    /**
+     * TODO write docs
+     */
+    public E getResult() {
+        return result;
+    }
+
+    /**
+     * TODO write docs
+     */
+    protected abstract E compute(T inputData) throws InterruptedException;
 }
+
+

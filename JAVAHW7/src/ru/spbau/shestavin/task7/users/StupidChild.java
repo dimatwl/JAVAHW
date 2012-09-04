@@ -16,7 +16,9 @@
 * ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
 * DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
 */
-package ru.spbau.shestavin.task7;
+package ru.spbau.shestavin.task7.users;
+
+import ru.spbau.shestavin.task7.services.DistributedIncrementor;
 
 import java.util.Random;
 
