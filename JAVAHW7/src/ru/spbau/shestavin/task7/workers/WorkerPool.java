@@ -18,8 +18,6 @@
 */
 package ru.spbau.shestavin.task7.workers;
 
-import ru.spbau.shestavin.task7.workers.Worker;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
