@@ -64,6 +64,7 @@ public class CompressingMessageWriter implements MessageWriter {
             throw new IOException("Can't flush closed stream.");
         } else if (myStoredMessage != null) {
             myMessageWriter.writeMessage(myStoredMessage);
+            myStoredMessage = null;
         }
     }
 
