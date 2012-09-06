@@ -62,7 +62,9 @@ public class Worker implements Runnable {
                     }
                 } else {
                     synchronized (taskQueue) {
-                        taskQueue.wait();
+                        if (taskQueue.isEmpty()) {
+                            taskQueue.wait();
+                        }
                     }
                 }
             }

@@ -75,10 +75,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task7/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="30" selection-start="2179" selection-end="2179" vertical-scroll-proportion="0.58756137">
+            <state line="47" column="49" selection-start="1811" selection-end="1811" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#2398#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -109,10 +109,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Worker.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Worker.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task7/workers/Worker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="42" selection-start="1544" selection-end="1544" vertical-scroll-proportion="0.0">
+            <state line="66" column="25" selection-start="2115" selection-end="2115" vertical-scroll-proportion="0.7643208">
               <folding />
             </state>
           </provider>
@@ -166,10 +166,10 @@
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task7/StupidChild.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task7/services/Task.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task7/services/DistributedIncrementor.java" />
-        <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task7/workers/Worker.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task7/workers/WorkerPool.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task7/users/StupidChild.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task7/Main.java" />
+        <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task7/workers/Worker.java" />
       </list>
     </option>
   </component>
@@ -655,20 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task7/services/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="10" selection-start="2139" selection-end="2139" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task7/workers/Worker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="42" selection-start="1544" selection-end="1544" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task7/users/StupidChild.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="47" selection-start="1512" selection-end="1512" vertical-scroll-proportion="0.0">
@@ -678,13 +664,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task7/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="30" selection-start="2179" selection-end="2179" vertical-scroll-proportion="0.58756137">
+        <state line="47" column="49" selection-start="1811" selection-end="1811" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#2398#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="e#1707#1720#0" expanded="true" />
             <element signature="e#1916#1924#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task7/services/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="10" selection-start="2139" selection-end="2139" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task7/workers/Worker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="25" selection-start="2115" selection-end="2115" vertical-scroll-proportion="0.7643208">
+          <folding />
         </state>
       </provider>
     </entry>
