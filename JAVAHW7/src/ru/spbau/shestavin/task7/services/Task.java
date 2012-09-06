@@ -28,14 +28,25 @@ package ru.spbau.shestavin.task7.services;
 public abstract class Task<T, E> implements Runnable {
     private E result = null;
     private T inputData;
+    private boolean isComputed = false;
 
     @Override
     public void run() {
         try {
             result = compute(inputData);
+            isComputed = true;
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }
+    }
+
+    /**
+     * Getter for isComputed field.
+     *
+     * @return true id method run() was called, else otherwise.
+     */
+    public boolean isComputed() {
+        return isComputed;
     }
 
     /**
@@ -62,7 +73,7 @@ public abstract class Task<T, E> implements Runnable {
      * @param inputData - input data to algorithm.
      * @return result of algorithm work.
      */
-    protected abstract E compute(T inputData) throws InterruptedException;
+    public abstract E compute(T inputData) throws InterruptedException;
 }
 
 

@@ -27,14 +27,7 @@ import java.util.Queue;
  * @author Dmitriy shestavin
  * @version 1.0 4 Sep 2012
  */
-public class Worker {
-
-    private final Thread thread = new Thread(new Runnable() {
-        @Override
-        public void run() {
-            mainCycle();
-        }
-    });
+public class Worker implements Runnable {
 
     private final Queue<Runnable> taskQueue;
 
@@ -45,30 +38,30 @@ public class Worker {
      */
     public Worker(Queue<Runnable> taskQueue) {
         this.taskQueue = taskQueue;
-        thread.setDaemon(true);
     }
 
-    /**
-     * Starts worker cycle in separate thread.
-     */
-    public void start() {
-        thread.start();
+    @Override
+    public void run() {
+        mainCycle();
     }
 
     private void mainCycle() {
         try {
             while (true) {
-                if (thread.isInterrupted()) {
+                if (Thread.currentThread().isInterrupted()) {
                     break;
                 }
+                Runnable task;
                 synchronized (taskQueue) {
-                    Runnable task = taskQueue.poll();
-                    if (null != task) {
-                        synchronized (task) {
-                            task.run();
-                            task.notify();
-                        }
-                    } else {
+                    task = taskQueue.poll();
+                }
+                if (null != task) {
+                    synchronized (task) {
+                        task.run();
+                        task.notify();
+                    }
+                } else {
+                    synchronized (taskQueue) {
                         taskQueue.wait();
                     }
                 }

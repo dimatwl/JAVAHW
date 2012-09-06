@@ -31,7 +31,8 @@ import java.util.Queue;
  */
 public class WorkerPool {
     private final List<Worker> workers;
-    private final Queue<Runnable> taskQueue;
+    private final Queue<Runnable> taskQueue = new LinkedList<Runnable>();;
+    private final List<Thread> threads = new ArrayList<Thread>();
 
     /**
      * Creates new WorkerPool.
@@ -40,7 +41,6 @@ public class WorkerPool {
      */
     public WorkerPool(int size) {
         workers = new ArrayList<Worker>(size);
-        taskQueue = new LinkedList<Runnable>();
         for (int i = 0; i < size; ++i) {
             workers.add(new Worker(taskQueue));
         }
@@ -51,7 +51,19 @@ public class WorkerPool {
      */
     public void start() {
         for (Worker worker : workers) {
-            worker.start();
+            Thread thread = new Thread(worker);
+            thread.setDaemon(true);
+            thread.start();
+            threads.add(thread);
+        }
+    }
+
+    /**
+     * Stops all workers.
+     */
+    public void stop() {
+        for (Thread thread : threads) {
+            thread.interrupt();
         }
     }
 

@@ -29,7 +29,7 @@ import java.util.Random;
  * @author Dmitriy shestavin
  * @version 1.0 4 Sep 2012
  */
-public class StupidChild {
+public class StupidChild implements Runnable {
     private boolean finished = false;
     private final int id;
     private final int numberOfIncrements;
@@ -37,12 +37,6 @@ public class StupidChild {
     private final int intervalWidth;
     private final DistributedIncrementor incrementor;
     private final Random random = new Random();
-    private final Thread thread = new Thread(new Runnable() {
-        @Override
-        public void run() {
-            mainCycle();
-        }
-    });
 
     /**
      * Creates new StupidChild.
@@ -74,11 +68,9 @@ public class StupidChild {
         return startIntervalNumber + random.nextInt(intervalWidth);
     }
 
-    /**
-     * Starts StupidChild cycle in separate thread.
-     */
-    public void start() {
-        thread.start();
+    @Override
+    public void run() {
+        mainCycle();
     }
 
     private void mainCycle() {

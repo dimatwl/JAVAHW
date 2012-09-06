@@ -48,20 +48,20 @@ public class Main {
             children.add(new StupidChild(i, 10000, 1, 1000, incrementor));
         }
         workers.start();
+        List<Thread> threads = new ArrayList<Thread>();
         for (StupidChild child : children) {
-            child.start();
+            Thread thread = new Thread(child);
+            thread.start();
+            threads.add(thread);
         }
         try {
-            for (StupidChild child : children) {
-                if (!child.isFinished()) {
-                    synchronized (child) {
-                        child.wait();
-                    }
-                }
+            for (Thread thread : threads) {
+                thread.join();
             }
         } catch (InterruptedException e) {
             System.out.println("Got InterruptedException. Exiting...");
             Thread.currentThread().interrupt();
         }
+        workers.stop();
     }
 }

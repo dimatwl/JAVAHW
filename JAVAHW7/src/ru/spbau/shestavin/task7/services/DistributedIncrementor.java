@@ -46,7 +46,7 @@ public class DistributedIncrementor {
     public int increment(int i) throws InterruptedException {
         Task<Integer, Integer> task = new Task<Integer, Integer>(i) {
             @Override
-            protected Integer compute(Integer inputData) throws InterruptedException {
+            public Integer compute(Integer inputData) throws InterruptedException {
                 return inputData + 1;
             }
         };
@@ -55,7 +55,9 @@ public class DistributedIncrementor {
                 taskQueue.offer(task);
                 taskQueue.notify();
             }
-            task.wait();
+            while (! task.isComputed()) {
+                task.wait();
+            }
         }
         return task.getResult();
     }
