@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Lexer {
@@ -10,7 +11,7 @@ public class Lexer {
     }
 
     public List<List<Token>> Tokenize() throws LexicalException {
-        List<List<Token>> result = new ArrayList<List<Token>>();
+        List<List<Token>> result = new LinkedList<List<Token>>();
         for (String line : lines) {
             positionInLine = 0;
             result.add(TokenizeLine(line));
@@ -19,7 +20,7 @@ public class Lexer {
     }
 
     private List<Token> TokenizeLine(String line) throws LexicalException {
-        List<Token> result = new ArrayList<Token>();
+        List<Token> result = new LinkedList<Token>();
         while (positionInLine < line.length()) {
             result.add(getNextToken(line));
         }
@@ -44,12 +45,12 @@ public class Lexer {
             return result;
         } else if (isAlpha(line.charAt(positionInLine))) {
             StringBuilder token = new StringBuilder();
-            while (positionInLine < line.length() && isAlpha(line.charAt(positionInLine)) || isDigit(line.charAt(positionInLine))) {
+            while (positionInLine < line.length() && isAlpha(line.charAt(positionInLine))) {
                 token.append(line.charAt(positionInLine));
                 ++positionInLine;
             }
             result.setValue(token.toString());
-            if (line.charAt(positionInLine) == '(') {
+            if (positionInLine < line.length() && line.charAt(positionInLine) == '(') {
                 result.setTokenType(Token.TokenType.FUNCTION);
             } else {
                 result.setTokenType(Token.TokenType.VARIABLE);
@@ -69,7 +70,7 @@ public class Lexer {
 
 
     private boolean isDelimeter(char c) {
-        return "=+-*/()".indexOf(c) != -1;
+        return "=+-*/(),".indexOf(c) != -1;
     }
 
     private boolean isAlpha(final char c) {

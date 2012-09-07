@@ -1,4 +1,3 @@
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 /**
@@ -27,8 +26,11 @@ public class Main {
         inputFileName = args[0];
         try {
             Parser parser = new Parser(inputFileName);
+            parser.evaluate();
         } catch (IOException e) {
             System.err.println("IOException on reading source file: " + e.getMessage());
+        } catch (LexicalException e) {
+            System.err.println(e.getMessage());
         }
     }
 }

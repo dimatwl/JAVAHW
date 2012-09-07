@@ -1,27 +1,30 @@
 import java.util.List;
 
 public class FunctionAssignment implements Statement {
-    private String name;
-    List<String> params;
-    private SyntaxTree value;
+    private Identifier name;
+    List<Identifier> params;
+    private Expression expression;
 
-    public FunctionAssignment(String name, List<String> params, SyntaxTree value) {
+    public FunctionAssignment(Identifier name, List<Identifier> params, Expression expression) {
         this.name = name;
         this.params = params;
-        this.value = value;
+        this.expression = expression;
     }
 
+
     @Override
-    public String getName() {
+    public Identifier getName() {
         return name;
     }
 
-    public List<String> getParams() {
+    public List<Identifier> getParams() {
         return params;
     }
 
     @Override
-    public SyntaxTree getValue() {
-        return value;
+    public Expression getExpression() {
+        return expression;
     }
 }
+
+

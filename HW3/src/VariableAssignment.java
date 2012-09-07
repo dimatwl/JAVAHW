@@ -1,20 +1,20 @@
 public class VariableAssignment implements Statement {
-    private String name;
-    private SyntaxTree value;
+    private Identifier name;
+    private Expression expression;
 
-    public VariableAssignment(String name, SyntaxTree value) {
+    public VariableAssignment(Identifier name, Expression expression) {
         this.name = name;
-        this.value = value;
+        this.expression = expression;
     }
 
 
     @Override
-    public String getName() {
+    public Identifier getName() {
         return name;
     }
 
     @Override
-    public SyntaxTree getValue() {
-        return value;
+    public Expression getExpression() {
+        return expression;
     }
 }

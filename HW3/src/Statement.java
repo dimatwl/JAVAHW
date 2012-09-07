@@ -1,5 +1,5 @@
 public interface Statement {
-    public String getName();
+    public Identifier getName();
 
-    public SyntaxTree getValue();
+    public Expression getExpression();
 }
