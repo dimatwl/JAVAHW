@@ -18,29 +18,63 @@
 */
 package ru.spbau.shestavin.task3.parsing.lexic_tools;
 
+/**
+ * Basic lexical entity.
+ * @author Dmitriy shestavin
+ * @version 1.0 7 Sep 2012
+ */
 public class Token {
+    /**
+     * Represents all types of tokens.
+     */
     public enum TokenType {NOTHING, DELIMETER, LITERAL, VARIABLE, FUNCTION, OPERATOR, PARENTHESIS, UNKNOWN}
 
     private String value;
     private TokenType tokenType;
 
+    /**
+     * Constructs Token with specified value and type.
+     *
+     * @param value - string containing text of token.
+     * @param tokenType - type of token.
+     */
     public Token(String value, TokenType tokenType) {
         this.value = value;
         this.tokenType = tokenType;
     }
 
+    /**
+     * Getter for value.
+     *
+     * @return value of token.
+     */
     public String getValue() {
         return value;
     }
 
+    /**
+     * Setter for value.
+     *
+     * @param value - value of token.
+     */
     public void setValue(String value) {
         this.value = value;
     }
 
+    /**
+     * Getter for type.
+     *
+     * @return type of token.
+     */
     public TokenType getTokenType() {
         return tokenType;
     }
 
+    /**
+     * Setter for type.
+     *
+     * @param tokenType - type of token.
+     */
     public void setTokenType(TokenType tokenType) {
         this.tokenType = tokenType;
     }

@@ -23,14 +23,29 @@ import ru.spbau.shestavin.task3.parsing.exceptions.LexicalException;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Lexical analizator. Using to convert source code to List<Token></Token>.
+ * @author Dmitriy shestavin
+ * @version 1.0 7 Sep 2012
+ */
 public class Lexer {
     private int positionInLine;
     private List<String> lines;
 
+    /**
+     * Constructs Lexer with lines of code.
+     *
+     * @param lines - sourcecode splitted into lines.
+     */
     public Lexer(List<String> lines) {
         this.lines = lines;
     }
 
+    /**
+     * Performs lexical analyze.
+     *
+     * @return source code converted to List<Token></Token>.
+     */
     public List<List<Token>> Tokenize() throws LexicalException {
         List<List<Token>> result = new LinkedList<List<Token>>();
         for (String line : lines) {

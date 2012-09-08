@@ -22,19 +22,41 @@ import ru.spbau.shestavin.task3.parsing.syntaxConstructions.Expression;
 
 import java.util.List;
 
+/**
+ * Represents function call.
+ *
+ * @author Dmitriy shestavin
+ * @version 1.0 7 Sep 2012
+ */
 public class FunctionCall implements AbstractSyntaxPrimitive {
     private String name;
     List<Expression> params;
 
+    /**
+     * Constructs FunctionCall object with specified name and parameters.
+     *
+     * @param name - name of function.
+     * @param params - parameters of function.
+     */
     public FunctionCall(String name, List<Expression> params) {
         this.name = name;
         this.params = params;
     }
 
+    /**
+     * Getter for name.
+     *
+     * @return name of function.
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * Getter for parameters of function.
+     *
+     * @return parameters of function.
+     */
     public List<Expression> getParams() {
         return params;
     }

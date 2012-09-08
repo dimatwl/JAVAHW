@@ -36,15 +36,37 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Stack;
 
+/**
+ * Parser for simple formulas like:
+ * a = -3
+ * b = (3 + a) * l
+ * f(x, y) = x * x
+ * f (b)/10
+ *
+ * Support evaluation of last expression.
+ *
+ * @author Dmitriy shestavin
+ * @version 1.0 7 Sep 2012
+ */
 public class Parser {
     private List<Statement> statements = null;
 
+    /**
+     * Constructs Parser object with specified name of file.
+     *
+     * @param fileName - name of input file with source code.
+     */
     public Parser(String fileName) {
         this.fileName = fileName;
     }
 
     private String fileName;
 
+    /**
+     * Evaluates last expression.
+     *
+     * @return result of evaluation.
+     */
     public Integer evaluate() throws IOException, LexicalException, SyntaxException {
         List<String> codeLines = readCode(fileName);
         Lexer lexer = new Lexer(codeLines);
@@ -67,11 +89,11 @@ public class Parser {
             if (leftArgVal.equals(0) && (operator.getType().equals(Operator.OperatorType.MUL) || operator.getType().equals(Operator.OperatorType.DIV))) {
                 result = 0;
             } else if (operator.getType().equals(Operator.OperatorType.UNARY_MINUS)) {
-                result = operator.performOperation(leftArgVal);
+                result = operator.apply(leftArgVal);
             } else {
                 Expression rightArg = new Expression(expression.getTree().getRightChild());
                 Integer rightArgVal = evaluate(rightArg);
-                result = operator.performOperation(leftArgVal, rightArgVal);
+                result = operator.apply(leftArgVal, rightArgVal);
             }
         } else if (expression.getTree().getAbstractSyntaxPrimitive() instanceof FunctionCall) {
             result = evaluate((FunctionCall) expression.getTree().getAbstractSyntaxPrimitive());

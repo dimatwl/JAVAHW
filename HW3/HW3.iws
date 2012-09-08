@@ -92,45 +92,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Statement.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxConstructions/Statement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="2" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#1079#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SyntaxTree.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxConstructions/SyntaxTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="2" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#2366#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VariableAssignment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxConstructions/VariableAssignment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="2" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#1835#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AbstractSyntaxPrimitive.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxPrimitives/AbstractSyntaxPrimitive.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="2" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
+            <state line="21" column="0" selection-start="903" selection-end="1037" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#0#947#0" expanded="true" />
+                <element signature="e#0#1083#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -139,10 +106,64 @@
       <file leaf-file-name="FunctionCall.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxPrimitives/FunctionCall.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="2" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
+            <state line="45" column="4" selection-start="1527" selection-end="1602" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#0#1777#0" expanded="true" />
+                <element signature="e#0#2240#0" expanded="true" />
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Expression.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxConstructions/Expression.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="4" selection-start="1281" selection-end="1360" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#1725#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SyntaxTree.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxConstructions/SyntaxTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="7" selection-start="1523" selection-end="1675" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#3143#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Parser.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/Parser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="67" column="35" selection-start="2282" selection-end="2282" vertical-scroll-proportion="0.34375">
+              <folding>
+                <element signature="e#0#16203#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#6843#6851#0" expanded="true" />
+                <element signature="e#7239#7250#0" expanded="true" />
+                <element signature="e#8456#8466#0" expanded="true" />
+                <element signature="e#11316#11328#0" expanded="true" />
+                <element signature="e#12530#12542#0" expanded="true" />
+                <element signature="e#12589#12599#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lexer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/lexic_tools/Lexer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="0" selection-start="1020" selection-end="1159" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#5022#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1673#1686#0" expanded="true" />
+                <element signature="e#1961#1968#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -151,9 +172,9 @@
       <file leaf-file-name="Literal.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxPrimitives/Literal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="2" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
+            <state line="29" column="4" selection-start="1091" selection-end="1204" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#0#1369#0" expanded="true" />
+                <element signature="e#0#1721#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -162,9 +183,20 @@
       <file leaf-file-name="Operator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxPrimitives/Operator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="2" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
+            <state line="86" column="7" selection-start="2500" selection-end="2582" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#0#3180#0" expanded="true" />
+                <element signature="e#0#3768#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Token.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/lexic_tools/Token.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="7" selection-start="1011" selection-end="1061" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#2512#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -173,38 +205,9 @@
       <file leaf-file-name="Variable.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxPrimitives/Variable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="2" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
+            <state line="30" column="23" selection-start="1109" selection-end="1109" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#0#1421#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Parser.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/Parser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="2" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#15777#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="e#6417#6425#0" expanded="true" />
-                <element signature="e#6813#6824#0" expanded="true" />
-                <element signature="e#8030#8040#0" expanded="true" />
-                <element signature="e#10890#10902#0" expanded="true" />
-                <element signature="e#12104#12116#0" expanded="true" />
-                <element signature="e#12163#12173#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="32" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.7028862">
-              <folding>
-                <element signature="e#0#2246#0" expanded="true" />
+                <element signature="e#0#1706#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -226,9 +229,9 @@
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/lexic_tools/Lexer.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/lexic_tools/Token.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxConstructions/Expression.java" />
-        <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxConstructions/FunctionAssignment.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxConstructions/Statement.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxConstructions/SyntaxTree.java" />
+        <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxConstructions/FunctionAssignment.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxConstructions/VariableAssignment.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxPrimitives/AbstractSyntaxPrimitive.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxPrimitives/FunctionCall.java" />
@@ -746,158 +749,158 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="32" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#2246#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/exceptions/LexicalException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="2" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
+        <state line="22" column="0" selection-start="956" selection-end="1084" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#1221#0" expanded="true" />
+            <element signature="e#0#1503#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/exceptions/SyntaxException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="2" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
+        <state line="28" column="4" selection-start="1095" selection-end="1255" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#1137#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/lexic_tools/Lexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="2" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#4644#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#1295#1308#0" expanded="true" />
-            <element signature="e#1583#1590#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/lexic_tools/Token.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="2" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#1864#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxConstructions/Expression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="2" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#1399#0" expanded="true" />
+            <element signature="e#0#1419#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxConstructions/FunctionAssignment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="2" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
+        <state line="40" column="7" selection-start="1300" selection-end="1507" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#2114#0" expanded="true" />
+            <element signature="e#0#2570#0" expanded="true" />
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxConstructions/Statement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="2" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#1079#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxConstructions/SyntaxTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="2" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#2366#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxConstructions/VariableAssignment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="2" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
+        <state line="35" column="68" selection-start="1372" selection-end="1372" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#1835#0" expanded="true" />
+            <element signature="e#0#2125#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxConstructions/Statement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="972" selection-end="1093" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#1410#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxPrimitives/AbstractSyntaxPrimitive.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="2" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
+        <state line="21" column="0" selection-start="903" selection-end="1037" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#947#0" expanded="true" />
+            <element signature="e#0#1083#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxConstructions/SyntaxTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="7" selection-start="1523" selection-end="1675" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#3143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxConstructions/Expression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="4" selection-start="1281" selection-end="1360" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#1725#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxPrimitives/FunctionCall.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="2" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
+        <state line="45" column="4" selection-start="1527" selection-end="1602" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#1777#0" expanded="true" />
+            <element signature="e#0#2240#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxPrimitives/Literal.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/lexic_tools/Token.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="2" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
+        <state line="28" column="7" selection-start="1011" selection-end="1061" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#1369#0" expanded="true" />
+            <element signature="e#0#2512#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxPrimitives/Operator.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/lexic_tools/Lexer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="2" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
+        <state line="25" column="0" selection-start="1020" selection-end="1159" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#3180#0" expanded="true" />
+            <element signature="e#0#5022#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1673#1686#0" expanded="true" />
+            <element signature="e#1961#1968#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxPrimitives/Variable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="2" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
+        <state line="30" column="23" selection-start="1109" selection-end="1109" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#1421#0" expanded="true" />
+            <element signature="e#0#1706#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxPrimitives/Literal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="4" selection-start="1091" selection-end="1204" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#1721#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/syntaxPrimitives/Operator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="7" selection-start="2500" selection-end="2582" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#3768#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/parsing/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="2" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
+        <state line="67" column="35" selection-start="2282" selection-end="2282" vertical-scroll-proportion="0.34375">
           <folding>
-            <element signature="e#0#15777#0" expanded="true" />
+            <element signature="e#0#16203#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#6417#6425#0" expanded="true" />
-            <element signature="e#6813#6824#0" expanded="true" />
-            <element signature="e#8030#8040#0" expanded="true" />
-            <element signature="e#10890#10902#0" expanded="true" />
-            <element signature="e#12104#12116#0" expanded="true" />
-            <element signature="e#12163#12173#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task3/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="32" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.7028862">
-          <folding>
-            <element signature="e#0#2246#0" expanded="true" />
+            <element signature="e#6843#6851#0" expanded="true" />
+            <element signature="e#7239#7250#0" expanded="true" />
+            <element signature="e#8456#8466#0" expanded="true" />
+            <element signature="e#11316#11328#0" expanded="true" />
+            <element signature="e#12530#12542#0" expanded="true" />
+            <element signature="e#12589#12599#0" expanded="true" />
           </folding>
         </state>
       </provider>

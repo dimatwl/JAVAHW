@@ -22,11 +22,23 @@ import ru.spbau.shestavin.task3.parsing.syntaxPrimitives.Variable;
 
 import java.util.List;
 
+/**
+ * Represents assignment of function. Here getVariable() returns name of function.
+ * @author Dmitriy shestavin
+ * @version 1.0 7 Sep 2012
+ */
 public class FunctionAssignment implements Statement {
     private Variable name;
     private List<Variable> params;
     private Expression expression;
 
+    /**
+     * Constructs Expression with specified syntax tree.
+     *
+     * @param name - name of function.
+     * @param params - parameters of function.
+     * @param expression - body of function.
+     */
     public FunctionAssignment(Variable name, List<Variable> params, Expression expression) {
         this.name = name;
         this.params = params;
@@ -39,6 +51,11 @@ public class FunctionAssignment implements Statement {
         return name;
     }
 
+    /**
+     * Getter for function parameters.
+     *
+     * @return function parameters.
+     */
     public List<Variable> getParams() {
         return params;
     }

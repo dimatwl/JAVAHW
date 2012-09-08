@@ -18,13 +18,29 @@
 */
 package ru.spbau.shestavin.task3.parsing.syntaxPrimitives;
 
+/**
+ * Represents symbolic literal.
+ *
+ * @author Dmitriy shestavin
+ * @version 1.0 7 Sep 2012
+ */
 public class Literal implements AbstractSyntaxPrimitive {
-    private int value;
+    private Integer value;
 
-    public Literal(int value) {
+    /**
+     * Constructs Literal object with specified value.
+     *
+     * @param value - value of literal.
+     */
+    public Literal(Integer value) {
         this.value = value;
     }
 
+    /**
+     * Getter for value.
+     *
+     * @return value of literal.
+     */
     public int getValue() {
         return value;
     }
@@ -36,7 +52,7 @@ public class Literal implements AbstractSyntaxPrimitive {
 
         Literal literal = (Literal) o;
 
-        if (value != literal.value) return false;
+        if (value != null ? !value.equals(literal.value) : literal.value != null) return false;
 
         return true;
     }

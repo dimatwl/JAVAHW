@@ -18,13 +18,28 @@
 */
 package ru.spbau.shestavin.task3.parsing.syntaxConstructions;
 
+/**
+ * Represents expression witch can be evaluated.
+ * @author Dmitriy shestavin
+ * @version 1.0 7 Sep 2012
+ */
 public class Expression {
     private SyntaxTree tree;
 
+    /**
+     * Constructs Expression with specified syntax tree.
+     *
+     * @param tree - syntax tree for expression.
+     */
     public Expression(SyntaxTree tree) {
         this.tree = tree;
     }
 
+    /**
+     * Getter for tree.
+     *
+     * @return value of syntax tree.
+     */
     public SyntaxTree getTree() {
         return tree;
     }

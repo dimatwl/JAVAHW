@@ -20,8 +20,24 @@ package ru.spbau.shestavin.task3.parsing.syntaxConstructions;
 
 import ru.spbau.shestavin.task3.parsing.syntaxPrimitives.Variable;
 
+/**
+ * Represents statement. All statements are assignments.
+ * @author Dmitriy shestavin
+ * @version 1.0 7 Sep 2012
+ */
 public interface Statement {
+
+    /**
+     * Getter for variable. (left side of assignment)
+     *
+     * @return variable.
+     */
     public Variable getVariable();
 
+    /**
+     * Getter for expression. (right side of assignment)
+     *
+     * @return expression.
+     */
     public Expression getExpression();
 }

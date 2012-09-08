@@ -20,12 +20,26 @@ package ru.spbau.shestavin.task3.parsing.syntaxPrimitives;
 
 import ru.spbau.shestavin.task3.parsing.exceptions.SyntaxException;
 
+/**
+ * Represents operator.
+ *
+ * @author Dmitriy shestavin
+ * @version 1.0 7 Sep 2012
+ */
 public class Operator implements AbstractSyntaxPrimitive {
 
+    /**
+     * Describes all supported operators.
+     */
     public enum OperatorType {UNARY_MINUS, MINUS, PLUS, MUL, DIV}
 
     private OperatorType type;
 
+    /**
+     * Constructs Operator object with specified value.
+     *
+     * @param value - value of operator.
+     */
     public Operator(String value) throws SyntaxException {
         if (value.equals("+")) {
             type = OperatorType.PLUS;
@@ -42,10 +56,20 @@ public class Operator implements AbstractSyntaxPrimitive {
         }
     }
 
+    /**
+     * Getter for type.
+     *
+     * @return type of operator.
+     */
     public OperatorType getType() {
         return type;
     }
 
+    /**
+     * Getter for priority.
+     *
+     * @return priority of operator.
+     */
     public int getPriority() {
         if (type.equals(OperatorType.PLUS) || type.equals(OperatorType.MINUS)) {
             return 0;
@@ -56,7 +80,12 @@ public class Operator implements AbstractSyntaxPrimitive {
         }
     }
 
-    public Integer performOperation(Integer leftArg, Integer rightArg) throws SyntaxException {
+    /**
+     * Applies operator to two Integers.
+     *
+     * @return result.
+     */
+    public Integer apply(Integer leftArg, Integer rightArg) throws SyntaxException {
         if (type.equals(OperatorType.PLUS)) {
             return leftArg + rightArg;
         } else if (type.equals(OperatorType.MINUS)) {
@@ -70,7 +99,12 @@ public class Operator implements AbstractSyntaxPrimitive {
         }
     }
 
-    public Integer performOperation(Integer arg) throws SyntaxException {
+    /**
+     * Applies operator to one Integer.
+     *
+     * @return result.
+     */
+    public Integer apply(Integer arg) throws SyntaxException {
         if (type.equals(OperatorType.UNARY_MINUS)) {
             return -arg;
         } else {

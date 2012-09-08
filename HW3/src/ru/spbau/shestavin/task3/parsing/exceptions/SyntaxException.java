@@ -18,9 +18,19 @@
 */
 package ru.spbau.shestavin.task3.parsing.exceptions;
 
+/**
+ * Class used to represent all problems with syntax.
+ * @author Dmitriy shestavin
+ * @version 1.0 7 Sep 2012
+ */
 public class SyntaxException extends Exception {
     private String message;
 
+    /**
+     * Constructs SerializationException with specified message.
+     *
+     * @param message - message witch will be returned on getMessage() call.
+     */
     public SyntaxException(String message) {
         this.message = message;
     }

@@ -20,10 +20,21 @@ package ru.spbau.shestavin.task3.parsing.syntaxConstructions;
 
 import ru.spbau.shestavin.task3.parsing.syntaxPrimitives.Variable;
 
+/**
+ * Represents assignment of variable.
+ * @author Dmitriy shestavin
+ * @version 1.0 7 Sep 2012
+ */
 public class VariableAssignment implements Statement {
     private Variable name;
     private Expression expression;
 
+    /**
+     * Constructs Expression with specified syntax tree.
+     *
+     * @param name - name of variable.
+     * @param expression - expression form right side of assignment.
+     */
     public VariableAssignment(Variable name, Expression expression) {
         this.name = name;
         this.expression = expression;

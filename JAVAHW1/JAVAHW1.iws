@@ -58,7 +58,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task1/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="841" vertical-scroll-proportion="0.0">
@@ -97,10 +97,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IllegalMessageFormatException.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="IllegalMessageFormatException.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task1/IllegalMessageFormatException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="13" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.0">
+            <state line="28" column="4" selection-start="1072" selection-end="1232" vertical-scroll-proportion="0.2195122">
               <folding />
             </state>
           </provider>
@@ -540,11 +540,6 @@
         <state line="31" column="17" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task1/IllegalMessageFormatException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="13" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task1/CompressingMessageWriter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="0" selection-start="1740" selection-end="1740" vertical-scroll-proportion="0.0" />
@@ -572,6 +567,13 @@
             <element signature="e#0#3049#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/shestavin/task1/IllegalMessageFormatException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="4" selection-start="1072" selection-end="1232" vertical-scroll-proportion="0.2195122">
+          <folding />
         </state>
       </provider>
     </entry>

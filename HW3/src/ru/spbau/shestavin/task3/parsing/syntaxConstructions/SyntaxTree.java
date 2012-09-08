@@ -20,6 +20,11 @@ package ru.spbau.shestavin.task3.parsing.syntaxConstructions;
 
 import ru.spbau.shestavin.task3.parsing.syntaxPrimitives.AbstractSyntaxPrimitive;
 
+/**
+ * Represents syntax tree consisting of AbstractSyntaxPrimitives.
+ * @author Dmitriy shestavin
+ * @version 1.0 7 Sep 2012
+ */
 public class SyntaxTree {
 
     private AbstractSyntaxPrimitive abstractSyntaxPrimitive;
@@ -27,26 +32,56 @@ public class SyntaxTree {
     private SyntaxTree leftChild = null;
     private SyntaxTree rightChild = null;
 
+    /**
+     * Getter for AbstractSyntaxPrimitive.
+     *
+     * @return value of AbstractSyntaxPrimitive.
+     */
     public AbstractSyntaxPrimitive getAbstractSyntaxPrimitive() {
         return abstractSyntaxPrimitive;
     }
 
+    /**
+     * Constructs SyntaxTree object with specified AbstractSyntaxPrimitive.
+     *
+     * @param abstractSyntaxPrimitive - syntax primitive.
+     */
     public SyntaxTree(AbstractSyntaxPrimitive abstractSyntaxPrimitive) {
         this.abstractSyntaxPrimitive = abstractSyntaxPrimitive;
     }
 
+    /**
+     * Getter for rightChild.
+     *
+     * @return value of rightChild.
+     */
     public SyntaxTree getRightChild() {
         return rightChild;
     }
 
+    /**
+     * Setter for rightChild.
+     *
+     * @param rightChild - value of rightChild.
+     */
     public void setRightChild(SyntaxTree rightChild) {
         this.rightChild = rightChild;
     }
 
+    /**
+     * Getter for leftChild.
+     *
+     * @return value of leftChild.
+     */
     public SyntaxTree getLeftChild() {
         return leftChild;
     }
 
+    /**
+     * Setter for leftChild.
+     *
+     * @param leftChild - value of leftChild.
+     */
     public void setLeftChild(SyntaxTree leftChild) {
         this.leftChild = leftChild;
     }

@@ -20,9 +20,19 @@ package ru.spbau.shestavin.task3.parsing.exceptions;
 
 import ru.spbau.shestavin.task3.parsing.lexic_tools.Token;
 
+/**
+ * Class used to represent all problems with lexical structures.
+ * @author Dmitriy shestavin
+ * @version 1.0 7 Sep 2012
+ */
 public class LexicalException extends Exception {
     private Token token;
 
+    /**
+     * Constructs LexicalException with specified Token.
+     *
+     * @param token - token witch will be returned on getMessage() call.
+     */
     public LexicalException(Token token) {
         this.token = token;
     }

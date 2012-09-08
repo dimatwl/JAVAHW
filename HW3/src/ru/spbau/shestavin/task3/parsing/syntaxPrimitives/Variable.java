@@ -18,13 +18,29 @@
 */
 package ru.spbau.shestavin.task3.parsing.syntaxPrimitives;
 
+/**
+ * Represents variable.
+ *
+ * @author Dmitriy shestavin
+ * @version 1.0 7 Sep 2012
+ */
 public class Variable implements AbstractSyntaxPrimitive {
     private String name;
 
+    /**
+     * Creates Variable object with specified name.
+     *
+     * @param name - name of variable.
+     */
     public Variable(String name) {
         this.name = name;
     }
 
+    /**
+     * Getter for name.
+     *
+     * @return name of variable.
+     */
     public String getName() {
         return name;
     }
