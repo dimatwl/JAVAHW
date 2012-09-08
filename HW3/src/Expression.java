@@ -1,7 +1,11 @@
 public class Expression {
     private SyntaxTree value;
 
-    public SyntaxTree getValue() {
+    public Expression(SyntaxTree tree) {
+        this.value = tree;
+    }
+
+    public SyntaxTree getTree() {
         return value;
     }
 }

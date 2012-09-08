@@ -34,6 +34,16 @@ public class Lexer {
             result.setValue(Character.toString(line.charAt(positionInLine)));
             ++positionInLine;
             return result;
+        } else if (isOperator(line.charAt(positionInLine))) {
+            result.setTokenType(Token.TokenType.OPERATOR);
+            result.setValue(Character.toString(line.charAt(positionInLine)));
+            ++positionInLine;
+            return result;
+        } else if (isParenthesis(line.charAt(positionInLine))) {
+            result.setTokenType(Token.TokenType.PARENTHESIS);
+            result.setValue(Character.toString(line.charAt(positionInLine)));
+            ++positionInLine;
+            return result;
         } else if (isDigit(line.charAt(positionInLine))) {
             result.setTokenType(Token.TokenType.LITERAL);
             StringBuilder token = new StringBuilder();
@@ -70,7 +80,15 @@ public class Lexer {
 
 
     private boolean isDelimeter(char c) {
-        return "=+-*/(),".indexOf(c) != -1;
+        return "=,".indexOf(c) != -1;
+    }
+
+    private boolean isOperator(char c) {
+        return "+-*/".indexOf(c) != -1;
+    }
+
+    private boolean isParenthesis(char c) {
+        return "()".indexOf(c) != -1;
     }
 
     private boolean isAlpha(final char c) {
