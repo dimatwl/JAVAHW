@@ -25,6 +25,7 @@ import java.util.List;
 
 /**
  * Lexical analizator. Using to convert source code to List<Token></Token>.
+ *
  * @author Dmitriy shestavin
  * @version 1.0 7 Sep 2012
  */

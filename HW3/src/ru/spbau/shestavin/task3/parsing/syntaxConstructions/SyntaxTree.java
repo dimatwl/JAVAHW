@@ -22,6 +22,7 @@ import ru.spbau.shestavin.task3.parsing.syntaxPrimitives.AbstractSyntaxPrimitive
 
 /**
  * Represents syntax tree consisting of AbstractSyntaxPrimitives.
+ *
  * @author Dmitriy shestavin
  * @version 1.0 7 Sep 2012
  */

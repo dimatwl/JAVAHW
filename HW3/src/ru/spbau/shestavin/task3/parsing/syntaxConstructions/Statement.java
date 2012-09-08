@@ -22,6 +22,7 @@ import ru.spbau.shestavin.task3.parsing.syntaxPrimitives.Variable;
 
 /**
  * Represents statement. All statements are assignments.
+ *
  * @author Dmitriy shestavin
  * @version 1.0 7 Sep 2012
  */

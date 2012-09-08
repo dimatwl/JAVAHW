@@ -22,6 +22,7 @@ import ru.spbau.shestavin.task3.parsing.lexic_tools.Token;
 
 /**
  * Class used to represent all problems with lexical structures.
+ *
  * @author Dmitriy shestavin
  * @version 1.0 7 Sep 2012
  */

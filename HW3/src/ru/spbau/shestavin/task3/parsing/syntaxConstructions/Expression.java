@@ -20,6 +20,7 @@ package ru.spbau.shestavin.task3.parsing.syntaxConstructions;
 
 /**
  * Represents expression witch can be evaluated.
+ *
  * @author Dmitriy shestavin
  * @version 1.0 7 Sep 2012
  */

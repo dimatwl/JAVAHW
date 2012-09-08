@@ -31,7 +31,9 @@ public class Operator implements AbstractSyntaxPrimitive {
     /**
      * Describes all supported operators.
      */
-    public enum OperatorType {UNARY_MINUS, MINUS, PLUS, MUL, DIV}
+    public enum OperatorType {
+        UNARY_MINUS, MINUS, PLUS, MUL, DIV
+    }
 
     private OperatorType type;
 

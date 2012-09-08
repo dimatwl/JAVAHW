@@ -35,7 +35,7 @@ public class FunctionCall implements AbstractSyntaxPrimitive {
     /**
      * Constructs FunctionCall object with specified name and parameters.
      *
-     * @param name - name of function.
+     * @param name   - name of function.
      * @param params - parameters of function.
      */
     public FunctionCall(String name, List<Expression> params) {

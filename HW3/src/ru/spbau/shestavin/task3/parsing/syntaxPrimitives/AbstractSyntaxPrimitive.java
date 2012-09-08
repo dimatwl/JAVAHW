@@ -22,6 +22,7 @@ package ru.spbau.shestavin.task3.parsing.syntaxPrimitives;
 /**
  * Represents abstract syntax primitive.
  * Used only to provide base.
+ *
  * @author Dmitriy shestavin
  * @version 1.0 7 Sep 2012
  */

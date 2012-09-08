@@ -20,6 +20,7 @@ package ru.spbau.shestavin.task3.parsing.lexic_tools;
 
 /**
  * Basic lexical entity.
+ *
  * @author Dmitriy shestavin
  * @version 1.0 7 Sep 2012
  */
@@ -27,7 +28,9 @@ public class Token {
     /**
      * Represents all types of tokens.
      */
-    public enum TokenType {NOTHING, DELIMETER, LITERAL, VARIABLE, FUNCTION, OPERATOR, PARENTHESIS, UNKNOWN}
+    public enum TokenType {
+        NOTHING, DELIMETER, LITERAL, VARIABLE, FUNCTION, OPERATOR, PARENTHESIS, UNKNOWN
+    }
 
     private String value;
     private TokenType tokenType;
@@ -35,7 +38,7 @@ public class Token {
     /**
      * Constructs Token with specified value and type.
      *
-     * @param value - string containing text of token.
+     * @param value     - string containing text of token.
      * @param tokenType - type of token.
      */
     public Token(String value, TokenType tokenType) {

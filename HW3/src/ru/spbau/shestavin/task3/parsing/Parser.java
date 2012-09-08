@@ -42,7 +42,7 @@ import java.util.Stack;
  * b = (3 + a) * l
  * f(x, y) = x * x
  * f (b)/10
- *
+ * <p/>
  * Support evaluation of last expression.
  *
  * @author Dmitriy shestavin

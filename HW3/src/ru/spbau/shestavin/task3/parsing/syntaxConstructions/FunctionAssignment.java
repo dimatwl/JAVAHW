@@ -24,6 +24,7 @@ import java.util.List;
 
 /**
  * Represents assignment of function. Here getVariable() returns name of function.
+ *
  * @author Dmitriy shestavin
  * @version 1.0 7 Sep 2012
  */
@@ -35,8 +36,8 @@ public class FunctionAssignment implements Statement {
     /**
      * Constructs Expression with specified syntax tree.
      *
-     * @param name - name of function.
-     * @param params - parameters of function.
+     * @param name       - name of function.
+     * @param params     - parameters of function.
      * @param expression - body of function.
      */
     public FunctionAssignment(Variable name, List<Variable> params, Expression expression) {
