@@ -1,3 +1,5 @@
+package ru.spbau.shestavin.task3.parsing.lexic_tools;
+
 public class Token {
     public enum TokenType {NOTHING, DELIMETER, LITERAL, VARIABLE, FUNCTION, OPERATOR, PARENTHESIS, UNKNOWN}
 

@@ -1,11 +1,15 @@
+package ru.spbau.shestavin.task3.parsing.syntaxConstructions;
+
+import ru.spbau.shestavin.task3.parsing.syntaxPrimitives.Variable;
+
 import java.util.List;
 
 public class FunctionAssignment implements Statement {
-    private Identifier name;
-    List<Identifier> params;
+    private Variable name;
+    List<Variable> params;
     private Expression expression;
 
-    public FunctionAssignment(Identifier name, List<Identifier> params, Expression expression) {
+    public FunctionAssignment(Variable name, List<Variable> params, Expression expression) {
         this.name = name;
         this.params = params;
         this.expression = expression;
@@ -13,11 +17,11 @@ public class FunctionAssignment implements Statement {
 
 
     @Override
-    public Identifier getName() {
+    public Variable getName() {
         return name;
     }
 
-    public List<Identifier> getParams() {
+    public List<Variable> getParams() {
         return params;
     }
 

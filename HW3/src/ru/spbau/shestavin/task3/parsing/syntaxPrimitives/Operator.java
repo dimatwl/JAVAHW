@@ -1,10 +1,14 @@
-public class Operator implements Item {
+package ru.spbau.shestavin.task3.parsing.syntaxPrimitives;
+
+import ru.spbau.shestavin.task3.parsing.exceptions.SyntaxException;
+
+public class Operator implements AbstractSyntaxPrimitive {
 
     public enum OperatorType {UNARY_MINUS, MINUS, PLUS, MUL, DIV}
 
     private OperatorType type;
 
-    public Operator(String value) throws SyntaxException{
+    public Operator(String value) throws SyntaxException {
         if (value.equals("+")) {
             type = OperatorType.PLUS;
         } else if (value.equals("-")) {

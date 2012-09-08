@@ -1,3 +1,5 @@
+package ru.spbau.shestavin.task3.parsing.exceptions;
+
 public class LexicalException extends Exception {
     private Token token;
 

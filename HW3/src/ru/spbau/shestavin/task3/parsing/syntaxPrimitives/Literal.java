@@ -1,4 +1,6 @@
-public class Literal implements Item {
+package ru.spbau.shestavin.task3.parsing.syntaxPrimitives;
+
+public class Literal implements AbstractSyntaxPrimitive {
     private int value;
 
     public Literal(int value) {

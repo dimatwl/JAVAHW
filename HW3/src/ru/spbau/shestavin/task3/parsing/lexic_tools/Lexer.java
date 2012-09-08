@@ -1,4 +1,7 @@
-import java.util.ArrayList;
+package ru.spbau.shestavin.task3.parsing.lexic_tools;
+
+import ru.spbau.shestavin.task3.parsing.exceptions.LexicalException;
+
 import java.util.LinkedList;
 import java.util.List;
 
