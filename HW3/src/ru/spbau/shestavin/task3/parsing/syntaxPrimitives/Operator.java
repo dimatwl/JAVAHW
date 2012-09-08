@@ -38,7 +38,7 @@ public class Operator implements AbstractSyntaxPrimitive {
         }
     }
 
-    public Integer performOperation (Integer leftArg, Integer rightArg) throws SyntaxException{
+    public Integer performOperation(Integer leftArg, Integer rightArg) throws SyntaxException {
         if (type.equals(OperatorType.PLUS)) {
             return leftArg + rightArg;
         } else if (type.equals(OperatorType.MINUS)) {
@@ -52,9 +52,9 @@ public class Operator implements AbstractSyntaxPrimitive {
         }
     }
 
-    public Integer performOperation (Integer arg) throws SyntaxException{
+    public Integer performOperation(Integer arg) throws SyntaxException {
         if (type.equals(OperatorType.UNARY_MINUS)) {
-            return - arg;
+            return -arg;
         } else {
             throw new SyntaxException("Binary operator can't be applied to one argument.");
         }

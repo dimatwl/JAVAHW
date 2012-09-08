@@ -13,7 +13,10 @@ import ru.spbau.shestavin.task3.parsing.syntaxPrimitives.Variable;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Stack;
 
 public class Parser {
     private List<Statement> statements = null;
@@ -36,31 +39,31 @@ public class Parser {
     private Integer evaluate(Expression expression) throws SyntaxException {
         Integer result = null;
         if (expression.getTree().getAbstractSyntaxPrimitive() instanceof Literal) {
-            result = ((Literal)expression.getTree().getAbstractSyntaxPrimitive()).getValue();
+            result = ((Literal) expression.getTree().getAbstractSyntaxPrimitive()).getValue();
         } else if (expression.getTree().getAbstractSyntaxPrimitive() instanceof Variable) {
-            result = evaluate((Variable)expression.getTree().getAbstractSyntaxPrimitive());
+            result = evaluate((Variable) expression.getTree().getAbstractSyntaxPrimitive());
         } else if (expression.getTree().getAbstractSyntaxPrimitive() instanceof Operator) {
-            Operator operator = (Operator)expression.getTree().getAbstractSyntaxPrimitive();
+            Operator operator = (Operator) expression.getTree().getAbstractSyntaxPrimitive();
             Expression leftArg = new Expression(expression.getTree().getLeftChild());
             Integer leftArgVal = evaluate(leftArg);
             if (leftArgVal.equals(0) && (operator.getType().equals(Operator.OperatorType.MUL) || operator.getType().equals(Operator.OperatorType.DIV))) {
                 result = 0;
-            } else if (operator.getType().equals(Operator.OperatorType.UNARY_MINUS)){
+            } else if (operator.getType().equals(Operator.OperatorType.UNARY_MINUS)) {
                 result = operator.performOperation(leftArgVal);
-            }else {
+            } else {
                 Expression rightArg = new Expression(expression.getTree().getRightChild());
                 Integer rightArgVal = evaluate(rightArg);
                 result = operator.performOperation(leftArgVal, rightArgVal);
             }
         } else if (expression.getTree().getAbstractSyntaxPrimitive() instanceof FunctionCall) {
-            result = evaluate((FunctionCall)expression.getTree().getAbstractSyntaxPrimitive());
+            result = evaluate((FunctionCall) expression.getTree().getAbstractSyntaxPrimitive());
         } else {
             throw new SyntaxException("Unknown syntax primitive.");
         }
         return result;
     }
 
-    private Integer evaluate(Variable variable) throws SyntaxException{
+    private Integer evaluate(Variable variable) throws SyntaxException {
         VariableAssignment assignment = findVariableAssignment(variable);
         if (null != assignment) {
             int indexInList = statements.indexOf(assignment);
@@ -73,7 +76,7 @@ public class Parser {
         }
     }
 
-    private Integer evaluate(FunctionCall call) throws SyntaxException{
+    private Integer evaluate(FunctionCall call) throws SyntaxException {
         FunctionAssignment assignment = findFunctionAssignment(call);
         if (null != assignment) {
             int indexInList = statements.indexOf(assignment);
@@ -113,20 +116,20 @@ public class Parser {
         return null;
     }
 
-    private List<String> readCode(String fileName) throws IOException{
+    private List<String> readCode(String fileName) throws IOException {
         List<String> lines = new ArrayList<String>();
 
-        BufferedReader reader = new BufferedReader( new FileReader(fileName));
+        BufferedReader reader = new BufferedReader(new FileReader(fileName));
         String line = null;
 
-        while( ( line = reader.readLine() ) != null ) {
+        while ((line = reader.readLine()) != null) {
             lines.add(line.replaceAll("\\s", ""));
         }
 
         return lines;
     }
 
-    private List<Statement> parse (List<List<Token>> tokens) throws SyntaxException{
+    private List<Statement> parse(List<List<Token>> tokens) throws SyntaxException {
         List<Statement> result = new LinkedList<Statement>();
         for (List<Token> line : tokens) {
             if (line.contains(new Token("=", Token.TokenType.DELIMETER))) {
@@ -136,23 +139,23 @@ public class Parser {
         return result;
     }
 
-    private Statement parseStatement(List<Token> line) throws SyntaxException{
+    private Statement parseStatement(List<Token> line) throws SyntaxException {
         Statement result = null;
         if (line.get(1).getValue().equals("=")) { //if variable assignment
             String name = line.get(0).getValue();
             line.subList(0, 2).clear();
             Expression expression = parseExpression(line);
             result = new VariableAssignment(new Variable(name), expression);
-        } else if (line.get(1).getValue().equals("(") && line.get(2).getValue().equals(")")){ //if variable assignment (function without params is variable)
+        } else if (line.get(1).getValue().equals("(") && line.get(2).getValue().equals(")")) { //if variable assignment (function without params is variable)
             String name = line.get(0).getValue();
             line.subList(0, 3).clear();
             Expression expression = parseExpression(line);
             result = new VariableAssignment(new Variable(name), expression);
-        } else if (line.get(1).getValue().equals("(")){ //if function assignment
+        } else if (line.get(1).getValue().equals("(")) { //if function assignment
             String name = line.get(0).getValue();
             List<Variable> params = new LinkedList<Variable>();
             int index = 2;
-            while (! line.get(index).getValue().equals(")")) {
+            while (!line.get(index).getValue().equals(")")) {
                 if (line.get(index).getTokenType().equals(Token.TokenType.VARIABLE)) {
                     params.add(new Variable(line.get(index).getValue()));
                     ++index;
@@ -180,7 +183,7 @@ public class Parser {
         return result;
     }
 
-    private Expression parseExpression(List<Token> line) throws SyntaxException{
+    private Expression parseExpression(List<Token> line) throws SyntaxException {
         int index = 0;
         boolean isLeftmost = getLeftmostSubExpression(line).size() == line.size();
         if (line.size() == 0) {
@@ -250,7 +253,7 @@ public class Parser {
                 if (opStack.isEmpty()) {
                     opStack.push(op);
                 } else {
-                    while (! opStack.isEmpty() && opStack.peek().getPriority() >= op.getPriority()) {
+                    while (!opStack.isEmpty() && opStack.peek().getPriority() >= op.getPriority()) {
                         Expression tmp = exprStack.pop();
                         compose(exprStack, opStack);
                         exprStack.push(tmp);
@@ -261,7 +264,7 @@ public class Parser {
                 throw new SyntaxException("Operator expected. Got '" + line.get(index).getValue() + "'.");
             }
         }
-        while (! opStack.empty()) {
+        while (!opStack.empty()) {
             compose(exprStack, opStack);
         }
         return exprStack.pop();
@@ -279,14 +282,14 @@ public class Parser {
     }
 
     private List<Token> removeOuterParentheses(List<Token> line) {
-        if (line.size() > 1 && line.get(0).getValue().equals("(") && line.get(line.size()-1).getValue().equals(")")) {
-            return line.subList(1, line.size()-1);
+        if (line.size() > 1 && line.get(0).getValue().equals("(") && line.get(line.size() - 1).getValue().equals(")")) {
+            return line.subList(1, line.size() - 1);
         } else {
             return line;
         }
     }
 
-    private List<Token> getLeftmostSubExpression(List<Token> line) throws SyntaxException{
+    private List<Token> getLeftmostSubExpression(List<Token> line) throws SyntaxException {
         int index = 0;
         if (line.get(index).getValue().equals("-")) {
             line.get(index).setValue("-u");
