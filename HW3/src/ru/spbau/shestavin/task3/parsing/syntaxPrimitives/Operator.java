@@ -15,7 +15,7 @@ public class Operator implements AbstractSyntaxPrimitive {
             type = OperatorType.MINUS;
         } else if (value.equals("*")) {
             type = OperatorType.MUL;
-        } else if (value.equals("+")) {
+        } else if (value.equals("/")) {
             type = OperatorType.DIV;
         } else if (value.equals("-u")) {
             type = OperatorType.UNARY_MINUS;
@@ -38,7 +38,7 @@ public class Operator implements AbstractSyntaxPrimitive {
         }
     }
 
-    public Integer performOperation (Integer leftArg, Integer rightArg) throws SyntaxException, ArithmeticException{
+    public Integer performOperation (Integer leftArg, Integer rightArg) throws SyntaxException{
         if (type.equals(OperatorType.PLUS)) {
             return leftArg + rightArg;
         } else if (type.equals(OperatorType.MINUS)) {

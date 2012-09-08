@@ -33,16 +33,16 @@ public class Main {
         inputFileName = args[0];
         try {
             Parser parser = new Parser(inputFileName);
-            parser.evaluate();
-            Token t1 = new Token("=", Token.TokenType.DELIMETER);
-            Token t2 = new Token("=", Token.TokenType.DELIMETER);
-            System.out.println(t1.equals(t2));
+            System.out.println("Ans = " + parser.evaluate());
         } catch (IOException e) {
             System.err.println("IOException on reading source file: " + e.getMessage());
         } catch (LexicalException e) {
             System.err.println(e.getMessage());
         } catch (SyntaxException e) {
             System.err.println(e.getMessage());
+        } catch (ArithmeticException e) {
+            System.err.println(e.getMessage());
         }
+
     }
 }

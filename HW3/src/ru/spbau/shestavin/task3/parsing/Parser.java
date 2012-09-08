@@ -28,9 +28,9 @@ public class Parser {
         List<String> codeLines = readCode(fileName);
         Lexer lexer = new Lexer(codeLines);
         List<List<Token>> tokens = lexer.Tokenize();
-        List<Statement> statements = parse(tokens);
+        statements = parse(tokens);
         Expression toEval = parseExpression(tokens.get(tokens.size() - 1));
-        return null;
+        return evaluate(toEval);
     }
 
     private Integer evaluate(Expression expression) throws SyntaxException {
@@ -43,7 +43,7 @@ public class Parser {
             Operator operator = (Operator)expression.getTree().getAbstractSyntaxPrimitive();
             Expression leftArg = new Expression(expression.getTree().getLeftChild());
             Integer leftArgVal = evaluate(leftArg);
-            if (leftArgVal.equals(0) && operator.getType().equals(Operator.OperatorType.MUL) || operator.getType().equals(Operator.OperatorType.DIV)) {
+            if (leftArgVal.equals(0) && (operator.getType().equals(Operator.OperatorType.MUL) || operator.getType().equals(Operator.OperatorType.DIV))) {
                 result = 0;
             } else if (operator.getType().equals(Operator.OperatorType.UNARY_MINUS)){
                 result = operator.performOperation(leftArgVal);
@@ -64,8 +64,10 @@ public class Parser {
         VariableAssignment assignment = findVariableAssignment(variable);
         if (null != assignment) {
             int indexInList = statements.indexOf(assignment);
-            statements.remove(indexInList);
-            return evaluate(assignment.getExpression());
+            Statement stmt = statements.remove(indexInList);
+            Integer val = evaluate(assignment.getExpression());
+            statements.add(indexInList, stmt);
+            return val;
         } else {
             throw new SyntaxException("Variable '" + variable.getName() + "' not defined.");
         }
@@ -75,13 +77,19 @@ public class Parser {
         FunctionAssignment assignment = findFunctionAssignment(call);
         if (null != assignment) {
             int indexInList = statements.indexOf(assignment);
-            statements.remove(indexInList);
+            Statement stmt = statements.remove(indexInList);
             int paramNumber = 0;
             for (Expression param : call.getParams()) {
                 Integer paramVal = evaluate(param);
                 statements.add(new VariableAssignment(assignment.getParams().get(paramNumber), new Expression(new SyntaxTree(new Literal(paramVal)))));
+                ++paramNumber;
             }
-            return evaluate(assignment.getExpression());
+            Integer val = evaluate(assignment.getExpression());
+            for (Expression param : call.getParams()) {
+                statements.remove(statements.size() - 1);
+            }
+            statements.add(indexInList, stmt);
+            return val;
         } else {
             throw new SyntaxException("Function '" + call.getName() + "' not defined.");
         }
@@ -122,7 +130,7 @@ public class Parser {
         List<Statement> result = new LinkedList<Statement>();
         for (List<Token> line : tokens) {
             if (line.contains(new Token("=", Token.TokenType.DELIMETER))) {
-                parseStatement(line);
+                result.add(parseStatement(line));
             }
         }
         return result;
@@ -174,6 +182,7 @@ public class Parser {
 
     private Expression parseExpression(List<Token> line) throws SyntaxException{
         int index = 0;
+        boolean isLeftmost = getLeftmostSubExpression(line).size() == line.size();
         if (line.size() == 0) {
             throw new SyntaxException("Empty expression detected");
         } else if (line.size() == 1) {
@@ -191,7 +200,7 @@ public class Parser {
             SyntaxTree tree = new SyntaxTree(op);
             tree.setLeftChild(expr.getTree());
             return new Expression(tree);
-        } else if (line.get(0).getTokenType().equals(Token.TokenType.FUNCTION)) {
+        } else if (line.get(0).getTokenType().equals(Token.TokenType.FUNCTION) && isLeftmost) {
             String funcName = line.get(0).getValue();
             int parenthesesLevel = 1;
             index += 2;
@@ -203,12 +212,15 @@ public class Parser {
                         ++parenthesesLevel;
                     } else if (line.get(index).getValue().equals(")")) {
                         --parenthesesLevel;
-                    } else if (line.get(index).getValue().equals(",")) {
+                    }
+                    if (line.get(index).getValue().equals(",") || (line.get(index).getValue().equals(")") && parenthesesLevel < 1)) {
                         int exprEndIndex = index;
                         List<Token> toParsing = removeOuterParentheses(line.subList(exprStartIndex, exprEndIndex));
                         Expression expr = parseExpression(toParsing);
                         params.add(expr);
-                        exprStartIndex = exprEndIndex;
+
+                        ++index;
+                        exprStartIndex = index;
                     }
                     ++index;
                 }
