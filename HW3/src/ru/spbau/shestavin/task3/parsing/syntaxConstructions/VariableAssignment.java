@@ -13,12 +13,25 @@ public class VariableAssignment implements Statement {
 
 
     @Override
-    public Variable getName() {
+    public Variable getVariable() {
         return name;
     }
 
     @Override
     public Expression getExpression() {
         return expression;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof VariableAssignment)) return false;
+
+        VariableAssignment that = (VariableAssignment) o;
+
+        if (expression != null ? !expression.equals(that.expression) : that.expression != null) return false;
+        if (name != null ? !name.equals(that.name) : that.name != null) return false;
+
+        return true;
     }
 }

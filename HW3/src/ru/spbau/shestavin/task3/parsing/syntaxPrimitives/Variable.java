@@ -11,4 +11,15 @@ public class Variable implements AbstractSyntaxPrimitive {
         return name;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Variable)) return false;
+
+        Variable variable = (Variable) o;
+
+        if (name != null ? !name.equals(variable.name) : variable.name != null) return false;
+
+        return true;
+    }
 }

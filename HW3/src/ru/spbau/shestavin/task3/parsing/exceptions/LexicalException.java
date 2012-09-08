@@ -1,5 +1,7 @@
 package ru.spbau.shestavin.task3.parsing.exceptions;
 
+import ru.spbau.shestavin.task3.parsing.lexic_tools.Token;
+
 public class LexicalException extends Exception {
     private Token token;
 

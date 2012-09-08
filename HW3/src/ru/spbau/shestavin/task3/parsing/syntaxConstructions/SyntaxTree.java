@@ -32,4 +32,19 @@ public class SyntaxTree {
     public void setLeftChild(SyntaxTree leftChild) {
         this.leftChild = leftChild;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof SyntaxTree)) return false;
+
+        SyntaxTree that = (SyntaxTree) o;
+
+        if (abstractSyntaxPrimitive != null ? !abstractSyntaxPrimitive.equals(that.abstractSyntaxPrimitive) : that.abstractSyntaxPrimitive != null)
+            return false;
+        if (leftChild != null ? !leftChild.equals(that.leftChild) : that.leftChild != null) return false;
+        if (rightChild != null ? !rightChild.equals(that.rightChild) : that.rightChild != null) return false;
+
+        return true;
+    }
 }

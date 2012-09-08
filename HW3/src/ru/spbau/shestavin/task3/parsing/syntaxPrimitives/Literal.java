@@ -10,4 +10,17 @@ public class Literal implements AbstractSyntaxPrimitive {
     public int getValue() {
         return value;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Literal)) return false;
+
+        Literal literal = (Literal) o;
+
+        if (value != literal.value) return false;
+
+        return true;
+    }
+
 }

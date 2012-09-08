@@ -38,4 +38,38 @@ public class Operator implements AbstractSyntaxPrimitive {
         }
     }
 
+    public Integer performOperation (Integer leftArg, Integer rightArg) throws SyntaxException, ArithmeticException{
+        if (type.equals(OperatorType.PLUS)) {
+            return leftArg + rightArg;
+        } else if (type.equals(OperatorType.MINUS)) {
+            return leftArg - rightArg;
+        } else if (type.equals(OperatorType.MUL)) {
+            return leftArg * rightArg;
+        } else if (type.equals(OperatorType.DIV)) {
+            return leftArg / rightArg;
+        } else {
+            throw new SyntaxException("Unary minus can't be applied to two arguments.");
+        }
+    }
+
+    public Integer performOperation (Integer arg) throws SyntaxException{
+        if (type.equals(OperatorType.UNARY_MINUS)) {
+            return - arg;
+        } else {
+            throw new SyntaxException("Binary operator can't be applied to one argument.");
+        }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Operator)) return false;
+
+        Operator operator = (Operator) o;
+
+        if (type != operator.type) return false;
+
+        return true;
+    }
+
 }

@@ -33,16 +33,76 @@ public class Parser {
         return null;
     }
 
-    private Integer evaluate(Expression expression) {
+    private Integer evaluate(Expression expression) throws SyntaxException {
+        Integer result = null;
         if (expression.getTree().getAbstractSyntaxPrimitive() instanceof Literal) {
-            return ((Literal)expression.getTree().getAbstractSyntaxPrimitive()).getValue();
-        } if (expression.getTree().getAbstractSyntaxPrimitive() instanceof Variable) {
-            return evaluate((Variable)expression.getTree().getAbstractSyntaxPrimitive());
+            result = ((Literal)expression.getTree().getAbstractSyntaxPrimitive()).getValue();
+        } else if (expression.getTree().getAbstractSyntaxPrimitive() instanceof Variable) {
+            result = evaluate((Variable)expression.getTree().getAbstractSyntaxPrimitive());
+        } else if (expression.getTree().getAbstractSyntaxPrimitive() instanceof Operator) {
+            Operator operator = (Operator)expression.getTree().getAbstractSyntaxPrimitive();
+            Expression leftArg = new Expression(expression.getTree().getLeftChild());
+            Integer leftArgVal = evaluate(leftArg);
+            if (leftArgVal.equals(0) && operator.getType().equals(Operator.OperatorType.MUL) || operator.getType().equals(Operator.OperatorType.DIV)) {
+                result = 0;
+            } else if (operator.getType().equals(Operator.OperatorType.UNARY_MINUS)){
+                result = operator.performOperation(leftArgVal);
+            }else {
+                Expression rightArg = new Expression(expression.getTree().getRightChild());
+                Integer rightArgVal = evaluate(rightArg);
+                result = operator.performOperation(leftArgVal, rightArgVal);
+            }
+        } else if (expression.getTree().getAbstractSyntaxPrimitive() instanceof FunctionCall) {
+            result = evaluate((FunctionCall)expression.getTree().getAbstractSyntaxPrimitive());
+        } else {
+            throw new SyntaxException("Unknown syntax primitive.");
+        }
+        return result;
+    }
+
+    private Integer evaluate(Variable variable) throws SyntaxException{
+        VariableAssignment assignment = findVariableAssignment(variable);
+        if (null != assignment) {
+            int indexInList = statements.indexOf(assignment);
+            statements.remove(indexInList);
+            return evaluate(assignment.getExpression());
+        } else {
+            throw new SyntaxException("Variable '" + variable.getName() + "' not defined.");
         }
     }
 
-    private Integer evaluate(Variable variable) {
+    private Integer evaluate(FunctionCall call) throws SyntaxException{
+        FunctionAssignment assignment = findFunctionAssignment(call);
+        if (null != assignment) {
+            int indexInList = statements.indexOf(assignment);
+            statements.remove(indexInList);
+            int paramNumber = 0;
+            for (Expression param : call.getParams()) {
+                Integer paramVal = evaluate(param);
+                statements.add(new VariableAssignment(assignment.getParams().get(paramNumber), new Expression(new SyntaxTree(new Literal(paramVal)))));
+            }
+            return evaluate(assignment.getExpression());
+        } else {
+            throw new SyntaxException("Function '" + call.getName() + "' not defined.");
+        }
+    }
 
+    private VariableAssignment findVariableAssignment(Variable variable) {
+        for (int i = statements.size() - 1; i >= 0; --i) {
+            if (statements.get(i) instanceof VariableAssignment && statements.get(i).getVariable().equals(variable)) {
+                return (VariableAssignment) statements.get(i);
+            }
+        }
+        return null;
+    }
+
+    private FunctionAssignment findFunctionAssignment(FunctionCall functionCall) {
+        for (int i = statements.size() - 1; i >= 0; --i) {
+            if (statements.get(i) instanceof FunctionAssignment && statements.get(i).getVariable().equals(new Variable(functionCall.getName()))) {
+                return (FunctionAssignment) statements.get(i);
+            }
+        }
+        return null;
     }
 
     private List<String> readCode(String fileName) throws IOException{
@@ -96,7 +156,7 @@ public class Parser {
                         throw new SyntaxException("'(' or ',' expected. Got '" + line.get(index).getValue() + "'.");
                     }
                 } else {
-                    throw new SyntaxException("ru.spbau.shestavin.task3.parsing.syntaxPrimitives.Variable expected. Got '" + line.get(index).getValue() + "'.");
+                    throw new SyntaxException("Variable expected. Got '" + line.get(index).getValue() + "'.");
                 }
             }
             ++index;
@@ -122,7 +182,7 @@ public class Parser {
             } else if (line.get(0).getTokenType().equals(Token.TokenType.LITERAL)) {
                 return new Expression(new SyntaxTree(new Literal(Integer.parseInt(line.get(0).getValue()))));
             } else {
-                throw new SyntaxException("ru.spbau.shestavin.task3.parsing.syntaxPrimitives.Variable or literal expected. Got '" + line.get(index).getValue() + "'.");
+                throw new SyntaxException("Variable or literal expected. Got '" + line.get(index).getValue() + "'.");
             }
         } else if (line.get(0).getValue().equals("-u")) {
             Operator op = new Operator(line.get(0).getValue());
@@ -186,7 +246,7 @@ public class Parser {
                     opStack.push(op);
                 }
             } else {
-                throw new SyntaxException("ru.spbau.shestavin.task3.parsing.syntaxPrimitives.Operator expected. Got '" + line.get(index).getValue() + "'.");
+                throw new SyntaxException("Operator expected. Got '" + line.get(index).getValue() + "'.");
             }
         }
         while (! opStack.empty()) {
@@ -243,7 +303,7 @@ public class Parser {
                 throw new SyntaxException("Parentheses not balanced.");
             }
         } else {
-            throw new SyntaxException("ru.spbau.shestavin.task3.parsing.syntaxConstructions.Expression expected. Got '" + line.get(index).getValue() + "'.");
+            throw new SyntaxException("Expression expected. Got '" + line.get(index).getValue() + "'.");
         }
         return line.subList(0, index);
     }
